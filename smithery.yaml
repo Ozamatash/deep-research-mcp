@@ -1,0 +1,21 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - openaiApiKey
+      - firecrawlKey
+    properties:
+      openaiApiKey:
+        type: string
+        description: The API key for accessing OpenAI services.
+      firecrawlKey:
+        type: string
+        description: The API key for accessing Firecrawl services.
+  commandFunction:
+    # A function that produces the CLI command to start the MCP on stdio.
+    |-
+    (config) => ({ command: 'node', args: ['--env-file', '.env.local', 'dist/mcp-server.js'], env: { OPENAI_API_KEY: config.openaiApiKey, FIRECRAWL_KEY: config.firecrawlKey } })
