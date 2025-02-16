@@ -1,4 +1,5 @@
 # Open Deep Research
+[![smithery badge](https://smithery.ai/badge/@Ozamatash/deep-research-mcp)](https://smithery.ai/server/@Ozamatash/deep-research-mcp)
 
 An AI-powered research assistant that performs iterative, deep research on any topic by combining search engines, web scraping, and large language models. Available as a Model Context Protocol (MCP) tool for seamless integration with AI agents.
 
@@ -83,6 +84,14 @@ flowchart TB
   - OpenAI API (for o3 mini model)
 
 ## Setup
+
+### Installing via Smithery
+
+To install Open Deep Research for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@Ozamatash/deep-research-mcp):
+
+```bash
+npx -y @smithery/cli install @Ozamatash/deep-research-mcp --client claude
+```
 
 ### Node.js
 
