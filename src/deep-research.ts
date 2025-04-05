@@ -1,3 +1,11 @@
+import fs from 'fs/promises';
+import path, { dirname } from 'path';
+// import { fileURLToPath } from 'url'; // Already imported below
+
+// Get the directory name of the current module for logging
+const __filename_log = fileURLToPath(import.meta.url);
+const __dirname_log = dirname(__filename_log);
+
 import { resolve } from 'path';
 import { fileURLToPath } from 'url';
 import FirecrawlApp, { SearchResponse } from '@mendable/firecrawl-js';
@@ -21,10 +29,10 @@ config({ path: resolve(__dirname, '../.env.local') });
 // Initialize output manager for coordinated console/progress output
 const output = new OutputManager();
 
-// Replace console.log with output.log
-function log(...args: any[]) {
-  output.log(...args);
-}
+// Original log function using OutputManager removed to avoid conflict
+// function log(...args: any[]) {
+//   output.log(...args);
+// }
 
 export type ResearchProgress = {
   currentDepth: number;
@@ -81,12 +89,14 @@ async function generateSerpQueries({
   learnings,
   learningReliabilities,
   researchDirections = [],
+  log, // Add log parameter
 }: {
   query: string;
   numQueries?: number;
   learnings?: string[];
   learningReliabilities?: number[];
   researchDirections?: ResearchDirection[];
+  log: (...args: any[]) => Promise<void>; // Add log type
 }) {
   // Convert to properly typed weighted learnings
   const weightedLearnings: LearningWithReliability[] = learnings && learningReliabilities 
@@ -157,13 +167,13 @@ Focus on generating queries that address these research directions, especially t
   // Log more detailed information about query generation
   const verificationQueries = validatedQueries.filter(q => q.isVerificationQuery);
   if (verificationQueries.length > 0) {
-    log(`Generated ${verificationQueries.length} verification queries to check information from less reliable sources`);
+    await log(`Generated ${verificationQueries.length} verification queries to check information from less reliable sources`); // Use await log
   }
 
   // Log which research directions are being addressed
   const queriesWithDirections = validatedQueries.filter(q => q.relatedDirection !== null);
   if (queriesWithDirections.length > 0) {
-    log(`Queries addressing research directions:\n${queriesWithDirections
+    await log(`Queries addressing research directions:\n${queriesWithDirections // Use await log
       .map(q => `- "${q.query}" addresses: ${q.relatedDirection}`)
       .join('\n')}`);
   }
@@ -218,6 +228,7 @@ async function processSerpResult({
   numFollowUpQuestions = 3,
   reliabilityThreshold = 0.3,
   researchGoal = '',
+  logToFile, // Rename parameter to logToFile
 }: {
   query: string;
   result: SearchResponse;
@@ -225,6 +236,7 @@ async function processSerpResult({
   numFollowUpQuestions?: number;
   reliabilityThreshold?: number;
   researchGoal?: string;
+  logToFile: (...args: any[]) => Promise<void>; // Rename type definition parameter
 }): Promise<{
   learnings: string[];
   learningConfidences: number[];
@@ -258,6 +270,7 @@ async function processSerpResult({
   }));
 
   const sourceMetadata = compact(await Promise.all(sourceMetadataPromises));
+  await logToFile('[processSerpResult] Generated sourceMetadata:', sourceMetadata); // Use logToFile
 
   // Sort and filter contents by reliability
   const contentWithMetadata = contents
@@ -273,7 +286,8 @@ async function processSerpResult({
     .filter(item => item.metadata.reliabilityScore >= reliabilityThreshold)
     .map(item => item.content);
 
-  log(`Ran ${query}, found ${contents.length} contents (${sourceMetadata.filter(m => m.reliabilityScore >= reliabilityThreshold).length} above reliability threshold ${reliabilityThreshold})`);
+  // Removed the synchronous log call that might have caused type issues
+  // logToFile(`Ran ${query}, found ${contents.length} contents (${sourceMetadata.filter(m => m.reliabilityScore >= reliabilityThreshold).length} above reliability threshold ${reliabilityThreshold})`); // Use logToFile and add await
 
   const res = await generateObject({
     model: o3MiniModel,
@@ -334,18 +348,26 @@ Also generate up to ${numFollowUpQuestions} follow-up questions, prioritized by 
     followUpPriorities: limitedFollowUpQuestions.map(q => q.priority),
     weightedLearnings
   };
+  await logToFile('[processSerpResult] Returning sourceMetadata:', sourceMetadata); // Use logToFile
 }
 
 export async function writeFinalReport({
   prompt,
   learnings,
+  visitedUrls, // Keep visitedUrls if needed elsewhere, but log needs sourceMetadata
   sourceMetadata,
+  log, // Add log function parameter
 }: {
   prompt: string;
   learnings: string[];
-  visitedUrls: string[];
+  visitedUrls: string[]; // Keep type
   sourceMetadata: SourceMetadata[];
+  log: (...args: any[]) => Promise<void>; // Add log type definition
 }) {
+  // Use the passed-in log function
+  await log('[writeFinalReport] Received sourceMetadata:', sourceMetadata);
+
+
   // Quick reliability analysis
   const reliabilityGroups = {
     high: sourceMetadata.filter(m => m.reliabilityScore >= 0.8),
@@ -393,8 +415,25 @@ Here are all the learnings from previous research:
     })
     .join('\n\n');
 
+  await log('[writeFinalReport] Generated sourcesSection:', sourcesSection);
+
   return res.object.reportMarkdown + sourcesSection;
 }
+
+// Define log function within deepResearch scope for passing down
+const logToFile = async (...args: any[]) => { // Rename to logToFile
+  const logFilePath = path.resolve(__dirname_log, '../deep-research-mcp.log');
+  const timestamp = new Date().toISOString();
+  const message = args
+    .map(arg => (typeof arg === 'string' ? arg : JSON.stringify(arg)))
+    .join(' ');
+  try {
+    await fs.appendFile(logFilePath, `${timestamp} - [deepResearch] ${message}\n`, 'utf-8');
+  } catch (error) {
+    console.error(`Failed to write to log file ${logFilePath}:`, error);
+    console.error(`Original log message: ${timestamp} - [deepResearch] ${message}`);
+  }
+};
 
 export async function deepResearch({
   query,
@@ -405,6 +444,7 @@ export async function deepResearch({
   visitedUrls = [],
   weightedLearnings = [],
   researchDirections = [],  // Add structured research directions
+  sourceMetadata = [], // Add sourceMetadata parameter with default empty array
   onProgress,
 }: {
   query: string;
@@ -415,6 +455,7 @@ export async function deepResearch({
   visitedUrls?: string[];
   weightedLearnings?: LearningWithReliability[];
   researchDirections?: ResearchDirection[];  // New parameter
+  sourceMetadata?: SourceMetadata[]; // Add sourceMetadata to type definition
   onProgress?: (progress: ResearchProgress) => void;
 }): Promise<{
   learnings: string[];
@@ -443,6 +484,7 @@ export async function deepResearch({
     learningReliabilities,
     numQueries: breadth,
     researchDirections,  // Pass research directions to influence query generation
+    log: logToFile, // Pass logToFile
   });
 
   reportProgress({
@@ -475,15 +517,17 @@ export async function deepResearch({
             numFollowUpQuestions: newBreadth,
             reliabilityThreshold: serpQuery.reliabilityThreshold,
             researchGoal: serpQuery.researchGoal,
+            logToFile, // Pass logToFile function
           });
           
           const allLearnings = [...learnings, ...processedResult.learnings];
           const allUrls = [...visitedUrls, ...newUrls];
-          const allSourceMetadata = [...(processedResult.sourceMetadata || [])];
+          // Aggregate sourceMetadata from current call and processed result
+          const allSourceMetadata = [...sourceMetadata, ...(processedResult.sourceMetadata || [])];
           const allWeightedLearnings = [...weightedLearnings, ...processedResult.weightedLearnings];
 
           if (newDepth > 0) {
-            log(
+            await logToFile( // Use logToFile
               `Researching deeper, breadth: ${newBreadth}, depth: ${newDepth}`,
             );
 
@@ -511,6 +555,7 @@ Follow-up research directions: ${processedResult.followUpQuestions.map(q => `\n$
               learningReliabilities: processedResult.learningConfidences,
               visitedUrls: allUrls,
               weightedLearnings: allWeightedLearnings,
+              sourceMetadata: allSourceMetadata, // Pass aggregated sourceMetadata
               researchDirections: processedResult.followUpQuestions.map((q, i) => ({
                 question: q,
                 priority: processedResult.followUpPriorities[i] || 3, // Default priority if undefined
@@ -528,15 +573,15 @@ Follow-up research directions: ${processedResult.followUpQuestions.map(q => `\n$
               learnings: allLearnings,
               learningReliabilities: processedResult.learningConfidences,
               visitedUrls: allUrls,
-              sourceMetadata: allSourceMetadata,
+              sourceMetadata: allSourceMetadata, // Return aggregated sourceMetadata
               weightedLearnings: allWeightedLearnings
             };
           }
         } catch (e: any) {
           if (e.message && e.message.includes('Timeout')) {
-            log(`Timeout error running query: ${serpQuery.query}: `, e);
+            await logToFile(`Timeout error running query: ${serpQuery.query}: `, e); // Use logToFile
           } else {
-            log(`Error running query: ${serpQuery.query}: `, e);
+            await logToFile(`Error running query: ${serpQuery.query}: `, e); // Use logToFile
           }
           return {
             learnings: [],
@@ -554,7 +599,18 @@ Follow-up research directions: ${processedResult.followUpQuestions.map(q => `\n$
     learnings: [...new Set(results.flatMap(r => r.learnings))],
     learningReliabilities: [...new Set(results.flatMap(r => r.learningReliabilities))],
     visitedUrls: [...new Set(results.flatMap(r => r.visitedUrls))],
-    sourceMetadata: [...new Set(results.flatMap(r => r.sourceMetadata))],
+    // Deduplicate sourceMetadata based on URL using a Map
+    sourceMetadata: Array.from(
+      results
+        .flatMap(r => r.sourceMetadata || []) // Ensure sourceMetadata exists and flatten
+        .reduce((map, meta) => {
+          if (meta?.url) { // Check if meta and meta.url exist
+            map.set(meta.url, meta); // Use URL as key, overwriting duplicates (keeps the last seen)
+          }
+          return map;
+        }, new Map<string, SourceMetadata>())
+        .values()
+    ),
     weightedLearnings: [...new Set(results.flatMap(r => r.weightedLearnings))]
   };
 

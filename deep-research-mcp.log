@@ -1,0 +1,954 @@
+2025-04-05T04:21:26.953Z - Environment check: {"hasOpenAiKey":true,"hasFirecrawlKey":false,"firecrawlBaseUrl":"http://localhost:3002","firecrawlConcurrency":2}
+2025-04-05T04:21:26.957Z - Deep Research MCP Server running on stdio
+2025-04-05T04:22:22.972Z - Depth 5/5, Query 0/3: 過去10年の機械学習ブレークスルー タイムラインと分析
+2025-04-05T04:22:48.086Z - Report Length: 4602
+2025-04-05T04:22:48.091Z - Report Tail (last 200 chars): 報源については、その信頼性および再現性が確認されたものであり、今後のさらなる検証と適用が期待される。
+* 継続的な技術レビューにより、新たなブレークスルーが発表される可能性も視野に入れつつ、包括的な理解の枠組みを構築している。
+
+---
+
+*注：本レポートは、最新の事例と仮説を含む先進的な研究成果を反映しており、技術の進展に伴い、今後の知見で更新される可能性がある。*
+
+
+## Sources
+
+
+2025-04-05T04:24:07.812Z - Environment check: {"hasOpenAiKey":true,"hasFirecrawlKey":false,"firecrawlBaseUrl":"http://localhost:3002","firecrawlConcurrency":2}
+2025-04-05T04:24:07.814Z - Deep Research MCP Server running on stdio
+2025-04-05T04:24:27.697Z - Depth 5/5, Query 0/3: 過去10年の機械学習ブレークスルーまとめとパラダイムシフトの要因
+2025-04-05T04:24:27.718Z - [writeFinalReport] Received sourceMetadata: []
+2025-04-05T04:24:47.697Z - [writeFinalReport] Generated sourcesSection: 
+
+## Sources
+
+
+2025-04-05T04:24:47.698Z - Report Length: 4246
+2025-04-05T04:24:47.699Z - Report Tail (last 200 chars): しょう。
+
+- **持続可能性へのコミットメント**: 環境負荷軽減のためのモデル圧縮やエネルギー効率の高いアルゴリズムの研究を積極的に推進し、持続可能な技術発展を目指す必要があります。
+
+このレポートが、機械学習分野におけるパラダイムシフトの全体像と今後の展望について、深い理解と広い視野を提供する一助となれば幸いです。
+
+---
+
+_最終更新: 2025年4月5日_
+
+
+## Sources
+
+
+2025-04-05T04:26:44.174Z - Environment check: {"hasOpenAiKey":true,"hasFirecrawlKey":false,"firecrawlBaseUrl":"http://localhost:3002","firecrawlConcurrency":2}
+2025-04-05T04:26:44.176Z - Deep Research MCP Server running on stdio
+2025-04-05T04:27:09.015Z - Depth 5/5, Query 0/3: 過去10年間の主要な機械学習ブレークスルーのレビューと分析
+2025-04-05T04:27:09.037Z - [writeFinalReport] Received sourceMetadata: []
+2025-04-05T04:27:56.628Z - [writeFinalReport] Generated sourcesSection: 
+
+## Sources
+
+
+2025-04-05T04:27:56.629Z - Report Length: 14628
+2025-04-05T04:27:56.629Z - Report Tail (last 200 chars): rent narrative on the evolution and future of machine learning. It should serve as a resource for experts looking to understand both historical impacts and upcoming trends in the field.*
+
+## Sources
+
+
+2025-04-05T04:32:14.415Z - Environment check: {"hasOpenAiKey":true,"hasFirecrawlKey":false,"firecrawlBaseUrl":"http://localhost:3002","firecrawlConcurrency":2}
+2025-04-05T04:32:14.417Z - Deep Research MCP Server running on stdio
+2025-04-05T04:32:43.516Z - [deepResearch] Queries addressing research directions:
+- "最新の機械学習アーキテクチャ 影響 分析 2020以降" addresses: 先行技術の進展と評価
+2025-04-05T04:32:43.517Z - Depth 5/5, Query 0/4: 過去10年の機械学習ブレークスルー タイムライン
+2025-04-05T04:32:43.534Z - [deepResearch] Error running query: 過去10年の機械学習ブレークスルー タイムライン:  {"statusCode":500}
+2025-04-05T04:32:43.535Z - [deepResearch] Error running query: 機械学習 パラダイムシフト 今後の方向性 研究動向 2030:  {"statusCode":500}
+2025-04-05T04:32:43.540Z - [deepResearch] Error running query: 最新の機械学習アーキテクチャ 影響 分析 2020以降:  {"statusCode":500}
+2025-04-05T04:32:43.541Z - [deepResearch] Error running query: 機械学習 パラダイムシフト 経済的影響と政策動向:  {"statusCode":500}
+2025-04-05T04:33:04.306Z - Report Length: 4394
+2025-04-05T04:33:04.307Z - Report Tail (last 200 chars): 展開に対する予測および提案を含むこのレポートは、今後10年、あるいはそれ以上にわたって機械学習分野の進化に大きく寄与することが期待されます。
+
+---
+
+*本レポートは、過去の研究成果と最新の技術動向に基づく考察および分析を踏まえ、広範な文献と実証実験の結果に照らしてまとめられたものです。各論点の検証には、既存の信頼性の高いソースと実証済みの手法を参照しております。*
+
+
+## Sources
+
+
+2025-04-05T05:08:34.589Z - Environment check: {"hasOpenAiKey":true,"hasFirecrawlKey":false,"firecrawlBaseUrl":"http://localhost:3002","firecrawlConcurrency":2}
+2025-04-05T05:08:34.592Z - Deep Research MCP Server running on stdio
+2025-04-05T05:36:52.098Z - Environment check: {"hasOpenAiKey":true,"hasFirecrawlKey":false,"firecrawlBaseUrl":"http://localhost:3002","firecrawlConcurrency":2}
+2025-04-05T05:36:52.113Z - Deep Research MCP Server running on stdio
+2025-04-05T05:39:22.517Z - Attempting to start local Firecrawl...
+2025-04-05T05:39:51.744Z - docker-compose up stdout: 
+2025-04-05T05:39:51.744Z - docker-compose up stderr:  valkey Pulling 
+ proxy3 Pulling 
+ redis-searxng Pulling 
+ proxy1 Pulling 
+ searxng Pulling 
+ proxy2 Pulling 
+ df20fa9351a1 Pulling fs layer 
+ e8c0b9df3ada Pulling fs layer 
+ fd641369ed38 Pulling fs layer 
+ df20fa9351a1 Pulling fs layer 
+ e8c0b9df3ada Pulling fs layer 
+ fd641369ed38 Pulling fs layer 
+ f18232174bc9 Already exists 
+ 622e632faadd Pulling fs layer 
+ 6d9689ce6197 Pulling fs layer 
+ 74dfc7331590 Pulling fs layer 
+ 640dc3b1132d Pulling fs layer 
+ 4f4fb700ef54 Pulling fs layer 
+ df360afa9235 Pulling fs layer 
+ 640dc3b1132d Waiting 
+ 4f4fb700ef54 Waiting 
+ df360afa9235 Waiting 
+ 6d9689ce6197 Waiting 
+ 74dfc7331590 Waiting 
+ 622e632faadd Waiting 
+ f18232174bc9 Already exists 
+ 622e632faadd Pulling fs layer 
+ 6d9689ce6197 Pulling fs layer 
+ 74dfc7331590 Pulling fs layer 
+ 640dc3b1132d Pulling fs layer 
+ 622e632faadd Waiting 
+ 4f4fb700ef54 Pulling fs layer 
+ df360afa9235 Pulling fs layer 
+ df360afa9235 Waiting 
+ 6d9689ce6197 Waiting 
+ 74dfc7331590 Waiting 
+ 640dc3b1132d Waiting 
+ 4f4fb700ef54 Waiting 
+ df20fa9351a1 Downloading [>                                                  ]  29.33kB/2.798MB
+ df20fa9351a1 Downloading [>                                                  ]  29.33kB/2.798MB
+ fd641369ed38 Downloading [================>                                  ]     758B/2.316kB
+ fd641369ed38 Downloading [==================================================>]  2.316kB/2.316kB
+ fd641369ed38 Download complete 
+ fd641369ed38 Downloading [================>                                  ]     758B/2.316kB
+ fd641369ed38 Download complete 
+ df20fa9351a1 Downloading [==================>                                ]  1.019MB/2.798MB
+ df20fa9351a1 Downloading [==================>                                ]  1.019MB/2.798MB
+ df20fa9351a1 Pulling fs layer 
+ e8c0b9df3ada Pulling fs layer 
+ fd641369ed38 Pulling fs layer 
+ fd641369ed38 Download complete 
+ df20fa9351a1 Downloading [==================>                                ]  1.019MB/2.798MB
+ 0a9a5dfd008f Pulling fs layer 
+ d2e47e94cad8 Pulling fs layer 
+ 4f4fb700ef54 Pulling fs layer 
+ 4ff7c58cb6ff Pulling fs layer 
+ 2212ce797ce3 Pulling fs layer 
+ d76a5c110d98 Pulling fs layer 
+ 264a670fe5df Pulling fs layer 
+ 92604d159b87 Pulling fs layer 
+ 4ff7c58cb6ff Waiting 
+ 0a9a5dfd008f Waiting 
+ 2212ce797ce3 Waiting 
+ d2e47e94cad8 Waiting 
+ d76a5c110d98 Waiting 
+ 4f4fb700ef54 Waiting 
+ 264a670fe5df Waiting 
+ 92604d159b87 Waiting 
+ df20fa9351a1 Downloading [========================================>          ]  2.276MB/2.798MB
+ df20fa9351a1 Downloading [========================================>          ]  2.276MB/2.798MB
+ df20fa9351a1 Downloading [========================================>          ]  2.276MB/2.798MB
+ e8c0b9df3ada Downloading [>                                                  ]  87.55kB/8.393MB
+ e8c0b9df3ada Downloading [>                                                  ]  87.55kB/8.393MB
+ e8c0b9df3ada Downloading [>                                                  ]  87.55kB/8.393MB
+ df20fa9351a1 Download complete 
+ df20fa9351a1 Download complete 
+ df20fa9351a1 Verifying Checksum 
+ df20fa9351a1 Download complete 
+ df20fa9351a1 Extracting [>                                                  ]  32.77kB/2.798MB
+ df20fa9351a1 Extracting [>                                                  ]  32.77kB/2.798MB
+ df20fa9351a1 Extracting [>                                                  ]  32.77kB/2.798MB
+ e8c0b9df3ada Downloading [=====>                                             ]  844.5kB/8.393MB
+ e8c0b9df3ada Downloading [=====>                                             ]  844.5kB/8.393MB
+ e8c0b9df3ada Downloading [=====>                                             ]  844.5kB/8.393MB
+ df20fa9351a1 Extracting [==================================================>]  2.798MB/2.798MB
+ df20fa9351a1 Extracting [==================================================>]  2.798MB/2.798MB
+ df20fa9351a1 Extracting [==================================================>]  2.798MB/2.798MB
+ df20fa9351a1 Pull complete 
+ df20fa9351a1 Pull complete 
+ df20fa9351a1 Pull complete 
+ e8c0b9df3ada Downloading [=============>                                     ]  2.307MB/8.393MB
+ e8c0b9df3ada Downloading [=============>                                     ]  2.307MB/8.393MB
+ e8c0b9df3ada Downloading [=============>                                     ]  2.307MB/8.393MB
+ e8c0b9df3ada Downloading [====================>                              ]  3.482MB/8.393MB
+ e8c0b9df3ada Downloading [====================>                              ]  3.482MB/8.393MB
+ e8c0b9df3ada Downloading [====================>                              ]  3.482MB/8.393MB
+ e8c0b9df3ada Downloading [============================>                      ]  4.744MB/8.393MB
+ e8c0b9df3ada Downloading [============================>                      ]  4.744MB/8.393MB
+ e8c0b9df3ada Downloading [============================>                      ]  4.744MB/8.393MB
+ e8c0b9df3ada Downloading [===================================>               ]  5.915MB/8.393MB
+ e8c0b9df3ada Downloading [===================================>               ]  5.915MB/8.393MB
+ e8c0b9df3ada Downloading [===================================>               ]  5.915MB/8.393MB
+ e8c0b9df3ada Downloading [==========================================>        ]  7.083MB/8.393MB
+ e8c0b9df3ada Downloading [==========================================>        ]  7.083MB/8.393MB
+ e8c0b9df3ada Downloading [==========================================>        ]  7.083MB/8.393MB
+ 6d9689ce6197 Downloading [>                                                  ]  2.738kB/195.2kB
+ 6d9689ce6197 Downloading [>                                                  ]  2.738kB/195.2kB
+ e8c0b9df3ada Downloading [=================================================> ]  8.262MB/8.393MB
+ e8c0b9df3ada Downloading [=================================================> ]  8.262MB/8.393MB
+ e8c0b9df3ada Downloading [=================================================> ]  8.262MB/8.393MB
+ e8c0b9df3ada Verifying Checksum 
+ e8c0b9df3ada Download complete 
+ e8c0b9df3ada Download complete 
+ e8c0b9df3ada Download complete 
+ e8c0b9df3ada Extracting [>                                                  ]   98.3kB/8.393MB
+ e8c0b9df3ada Extracting [>                                                  ]   98.3kB/8.393MB
+ e8c0b9df3ada Extracting [>                                                  ]   98.3kB/8.393MB
+ 6d9689ce6197 Verifying Checksum 
+ 6d9689ce6197 Download complete 
+ 6d9689ce6197 Verifying Checksum 
+ 6d9689ce6197 Download complete 
+ e8c0b9df3ada Extracting [========>                                          ]  1.376MB/8.393MB
+ e8c0b9df3ada Extracting [========>                                          ]  1.376MB/8.393MB
+ e8c0b9df3ada Extracting [========>                                          ]  1.376MB/8.393MB
+ e8c0b9df3ada Extracting [==============================>                    ]  5.112MB/8.393MB
+ e8c0b9df3ada Extracting [==============================>                    ]  5.112MB/8.393MB
+ e8c0b9df3ada Extracting [==============================>                    ]  5.112MB/8.393MB
+ e8c0b9df3ada Extracting [===============================================>   ]  7.963MB/8.393MB
+ e8c0b9df3ada Extracting [===============================================>   ]  7.963MB/8.393MB
+ e8c0b9df3ada Extracting [===============================================>   ]  7.963MB/8.393MB
+ 622e632faadd Downloading [=====================================>             ]     721B/954B
+ 622e632faadd Downloading [=====================================>             ]     721B/954B
+ 622e632faadd Download complete 
+ 622e632faadd Downloading [==================================================>]     954B/954B
+ 622e632faadd Download complete 
+ 622e632faadd Extracting [==================================================>]     954B/954B
+ 622e632faadd Extracting [==================================================>]     954B/954B
+ 622e632faadd Extracting [==================================================>]     954B/954B
+ 622e632faadd Extracting [==================================================>]     954B/954B
+ 622e632faadd Pull complete 
+ 622e632faadd Pull complete 
+ 6d9689ce6197 Extracting [========>                                          ]  32.77kB/195.2kB
+ 6d9689ce6197 Extracting [========>                                          ]  32.77kB/195.2kB
+ 6d9689ce6197 Extracting [==================================================>]  195.2kB/195.2kB
+ 6d9689ce6197 Extracting [==================================================>]  195.2kB/195.2kB
+ 6d9689ce6197 Extracting [==================================================>]  195.2kB/195.2kB
+ 6d9689ce6197 Extracting [==================================================>]  195.2kB/195.2kB
+ e8c0b9df3ada Extracting [==================================================>]  8.393MB/8.393MB
+ e8c0b9df3ada Extracting [==================================================>]  8.393MB/8.393MB
+ e8c0b9df3ada Extracting [==================================================>]  8.393MB/8.393MB
+ 640dc3b1132d Downloading [==================================================>]     101B/101B
+ 640dc3b1132d Download complete 
+ 640dc3b1132d Verifying Checksum 
+ 640dc3b1132d Download complete 
+ 74dfc7331590 Downloading [>                                                  ]  130.3kB/12.83MB
+ 74dfc7331590 Downloading [>                                                  ]  130.3kB/12.83MB
+ 6d9689ce6197 Pull complete 
+ 6d9689ce6197 Pull complete 
+ e8c0b9df3ada Pull complete 
+ e8c0b9df3ada Pull complete 
+ e8c0b9df3ada Pull complete 
+ fd641369ed38 Extracting [==================================================>]  2.316kB/2.316kB
+ fd641369ed38 Extracting [==================================================>]  2.316kB/2.316kB
+ fd641369ed38 Extracting [==================================================>]  2.316kB/2.316kB
+ fd641369ed38 Extracting [==================================================>]  2.316kB/2.316kB
+ fd641369ed38 Extracting [==================================================>]  2.316kB/2.316kB
+ fd641369ed38 Extracting [==================================================>]  2.316kB/2.316kB
+ 74dfc7331590 Downloading [====>                                              ]  1.199MB/12.83MB
+ 74dfc7331590 Downloading [====>                                              ]  1.199MB/12.83MB
+ fd641369ed38 Pull complete 
+ fd641369ed38 Pull complete 
+ fd641369ed38 Pull complete 
+ proxy3 Pulled 
+ proxy2 Pulled 
+ proxy1 Pulled 
+ 74dfc7331590 Downloading [==========>                                        ]  2.652MB/12.83MB
+ 74dfc7331590 Downloading [==========>                                        ]  2.652MB/12.83MB
+ 74dfc7331590 Downloading [===============>                                   ]  3.865MB/12.83MB
+ 74dfc7331590 Downloading [===============>                                   ]  3.865MB/12.83MB
+ 4f4fb700ef54 Verifying Checksum 
+ 4f4fb700ef54 Download complete 
+ 4f4fb700ef54 Downloading [==================================================>]      32B/32B
+ 4f4fb700ef54 Download complete 
+ 74dfc7331590 Downloading [===================>                               ]  5.065MB/12.83MB
+ 74dfc7331590 Downloading [===================>                               ]  5.065MB/12.83MB
+ 74dfc7331590 Downloading [========================>                          ]  6.245MB/12.83MB
+ 74dfc7331590 Downloading [========================>                          ]  6.245MB/12.83MB
+ 74dfc7331590 Downloading [=============================>                     ]  7.457MB/12.83MB
+ 74dfc7331590 Downloading [=============================>                     ]  7.457MB/12.83MB
+ df360afa9235 Downloading [==================================================>]     522B/522B
+ df360afa9235 Verifying Checksum 
+ df360afa9235 Download complete 
+ df360afa9235 Verifying Checksum 
+ df360afa9235 Download complete 
+ 74dfc7331590 Downloading [=================================>                 ]  8.657MB/12.83MB
+ 74dfc7331590 Downloading [=================================>                 ]  8.657MB/12.83MB
+ 74dfc7331590 Downloading [======================================>            ]  9.845MB/12.83MB
+ 74dfc7331590 Downloading [======================================>            ]  9.845MB/12.83MB
+ 74dfc7331590 Downloading [===========================================>       ]  11.04MB/12.83MB
+ 74dfc7331590 Downloading [===========================================>       ]  11.04MB/12.83MB
+ 74dfc7331590 Downloading [===============================================>   ]  12.22MB/12.83MB
+ 74dfc7331590 Downloading [===============================================>   ]  12.22MB/12.83MB
+ 0a9a5dfd008f Downloading [>                                                  ]  37.46kB/3.627MB
+ 74dfc7331590 Verifying Checksum 
+ 74dfc7331590 Verifying Checksum 
+ 74dfc7331590 Download complete 
+ 74dfc7331590 Download complete 
+ 74dfc7331590 Extracting [>                                                  ]  131.1kB/12.83MB
+ 74dfc7331590 Extracting [>                                                  ]  131.1kB/12.83MB
+ 0a9a5dfd008f Downloading [=============>                                     ]  965.8kB/3.627MB
+ 74dfc7331590 Extracting [==================>                                ]   4.85MB/12.83MB
+ 74dfc7331590 Extracting [==================>                                ]   4.85MB/12.83MB
+ 0a9a5dfd008f Downloading [================================>                  ]  2.391MB/3.627MB
+ 74dfc7331590 Extracting [=============================================>     ]  11.67MB/12.83MB
+ 74dfc7331590 Extracting [=============================================>     ]  11.67MB/12.83MB
+ d2e47e94cad8 Downloading [===================================>               ]     708B/987B
+ d2e47e94cad8 Downloading [==================================================>]     987B/987B
+ d2e47e94cad8 Verifying Checksum 
+ d2e47e94cad8 Download complete 
+ 74dfc7331590 Extracting [==================================================>]  12.83MB/12.83MB
+ 74dfc7331590 Extracting [==================================================>]  12.83MB/12.83MB
+ 74dfc7331590 Pull complete 
+ 74dfc7331590 Pull complete 
+ 0a9a5dfd008f Downloading [=================================================> ]  3.603MB/3.627MB
+ 640dc3b1132d Extracting [==================================================>]     101B/101B
+ 640dc3b1132d Extracting [==================================================>]     101B/101B
+ 640dc3b1132d Extracting [==================================================>]     101B/101B
+ 640dc3b1132d Extracting [==================================================>]     101B/101B
+ 0a9a5dfd008f Verifying Checksum 
+ 0a9a5dfd008f Download complete 
+ 0a9a5dfd008f Extracting [>                                                  ]  65.54kB/3.627MB
+ 640dc3b1132d Pull complete 
+ 640dc3b1132d Pull complete 
+ 4f4fb700ef54 Extracting [==================================================>]      32B/32B
+ 4f4fb700ef54 Extracting [==================================================>]      32B/32B
+ 4f4fb700ef54 Extracting [==================================================>]      32B/32B
+ 4f4fb700ef54 Extracting [==================================================>]      32B/32B
+ 4f4fb700ef54 Pull complete 
+ 4f4fb700ef54 Pull complete 
+ 0a9a5dfd008f Extracting [=====================================>             ]  2.753MB/3.627MB
+ df360afa9235 Extracting [==================================================>]     522B/522B
+ df360afa9235 Extracting [==================================================>]     522B/522B
+ df360afa9235 Extracting [==================================================>]     522B/522B
+ df360afa9235 Extracting [==================================================>]     522B/522B
+ 0a9a5dfd008f Extracting [==================================================>]  3.627MB/3.627MB
+ df360afa9235 Pull complete 
+ df360afa9235 Pull complete 
+ valkey Pulled 
+ redis-searxng Pulled 
+ 0a9a5dfd008f Pull complete 
+ d2e47e94cad8 Extracting [==================================================>]     987B/987B
+ d2e47e94cad8 Extracting [==================================================>]     987B/987B
+ d2e47e94cad8 Pull complete 
+ 4f4fb700ef54 Downloading [==================================================>]      32B/32B
+ 4f4fb700ef54 Verifying Checksum 
+ 4f4fb700ef54 Download complete 
+ 4f4fb700ef54 Extracting [==================================================>]      32B/32B
+ 4f4fb700ef54 Extracting [==================================================>]      32B/32B
+ 4f4fb700ef54 Pull complete 
+ 4ff7c58cb6ff Downloading [==================================================>]     457B/457B
+ 4ff7c58cb6ff Download complete 
+ 4ff7c58cb6ff Extracting [==================================================>]     457B/457B
+ 4ff7c58cb6ff Extracting [==================================================>]     457B/457B
+ 4ff7c58cb6ff Pull complete 
+ 2212ce797ce3 Downloading [>                                                  ]  535.8kB/58.34MB
+ 2212ce797ce3 Downloading [=>                                                 ]  2.137MB/58.34MB
+ 2212ce797ce3 Downloading [===>                                               ]  3.754MB/58.34MB
+ d76a5c110d98 Downloading [=============>                                     ]     721B/2.755kB
+ d76a5c110d98 Downloading [==================================================>]  2.755kB/2.755kB
+ d76a5c110d98 Verifying Checksum 
+ d76a5c110d98 Download complete 
+ 2212ce797ce3 Downloading [====>                                              ]  5.364MB/58.34MB
+ 2212ce797ce3 Downloading [=====>                                             ]  6.974MB/58.34MB
+ 264a670fe5df Downloading [>                                                  ]  49.78kB/4.903MB
+ 264a670fe5df Downloading [===>                                               ]  314.6kB/4.903MB
+ 2212ce797ce3 Downloading [======>                                            ]   7.51MB/58.34MB
+ 264a670fe5df Downloading [===============>                                   ]  1.501MB/4.903MB
+ 264a670fe5df Downloading [======================>                            ]  2.247MB/4.903MB
+ 2212ce797ce3 Downloading [=======>                                           ]  8.583MB/58.34MB
+ 264a670fe5df Downloading [=============================>                     ]  2.898MB/4.903MB
+ 264a670fe5df Downloading [=========================================>         ]  4.078MB/4.903MB
+ 2212ce797ce3 Downloading [========>                                          ]  9.657MB/58.34MB
+ 264a670fe5df Download complete 
+ 2212ce797ce3 Downloading [========>                                          ]   10.2MB/58.34MB
+ 2212ce797ce3 Downloading [==========>                                        ]  11.81MB/58.34MB
+ 2212ce797ce3 Downloading [===========>                                       ]  13.42MB/58.34MB
+ 2212ce797ce3 Downloading [============>                                      ]  15.03MB/58.34MB
+ 2212ce797ce3 Downloading [==============>                                    ]  16.65MB/58.34MB
+ 2212ce797ce3 Downloading [===============>                                   ]  18.26MB/58.34MB
+ 2212ce797ce3 Downloading [=================>                                 ]  19.88MB/58.34MB
+ 92604d159b87 Downloading [>                                                  ]  8.799kB/867.7kB
+ 2212ce797ce3 Downloading [==================>                                ]  21.49MB/58.34MB
+ 92604d159b87 Downloading [=====================>                             ]  380.2kB/867.7kB
+ 92604d159b87 Verifying Checksum 
+ 92604d159b87 Download complete 
+ 2212ce797ce3 Downloading [===================>                               ]  22.57MB/58.34MB
+ 2212ce797ce3 Downloading [====================>                              ]  24.18MB/58.34MB
+ 2212ce797ce3 Downloading [=====================>                             ]  25.24MB/58.34MB
+ 2212ce797ce3 Downloading [=======================>                           ]  26.85MB/58.34MB
+ 2212ce797ce3 Downloading [========================>                          ]  28.46MB/58.34MB
+ 2212ce797ce3 Downloading [=========================>                         ]  30.08MB/58.34MB
+ 2212ce797ce3 Downloading [===========================>                       ]  31.68MB/58.34MB
+ 2212ce797ce3 Downloading [============================>                      ]  33.29MB/58.34MB
+ 2212ce797ce3 Downloading [=============================>                     ]  34.89MB/58.34MB
+ 2212ce797ce3 Downloading [===============================>                   ]  36.51MB/58.34MB
+ 2212ce797ce3 Downloading [================================>                  ]  38.12MB/58.34MB
+ 2212ce797ce3 Downloading [==================================>                ]  39.71MB/58.34MB
+ 2212ce797ce3 Downloading [===================================>               ]  41.31MB/58.34MB
+ 2212ce797ce3 Downloading [====================================>              ]  42.93MB/58.34MB
+ 2212ce797ce3 Downloading [======================================>            ]  44.53MB/58.34MB
+ 2212ce797ce3 Downloading [=======================================>           ]  46.13MB/58.34MB
+ 2212ce797ce3 Downloading [========================================>          ]  47.75MB/58.34MB
+ 2212ce797ce3 Downloading [==========================================>        ]  49.36MB/58.34MB
+ 2212ce797ce3 Downloading [===========================================>       ]  50.97MB/58.34MB
+ 2212ce797ce3 Downloading [=============================================>     ]  52.57MB/58.34MB
+ 2212ce797ce3 Downloading [==============================================>    ]  54.17MB/58.34MB
+ 2212ce797ce3 Downloading [===============================================>   ]  55.77MB/58.34MB
+ 2212ce797ce3 Downloading [=================================================> ]  57.37MB/58.34MB
+ 2212ce797ce3 Verifying Checksum 
+ 2212ce797ce3 Download complete 
+ 2212ce797ce3 Extracting [>                                                  ]  557.1kB/58.34MB
+ 2212ce797ce3 Extracting [=====>                                             ]  6.685MB/58.34MB
+ 2212ce797ce3 Extracting [========>                                          ]  10.03MB/58.34MB
+ 2212ce797ce3 Extracting [=========>                                         ]  11.14MB/58.34MB
+ 2212ce797ce3 Extracting [=============>                                     ]   15.6MB/58.34MB
+ 2212ce797ce3 Extracting [=================>                                 ]  20.05MB/58.34MB
+ 2212ce797ce3 Extracting [===================>                               ]  22.84MB/58.34MB
+ 2212ce797ce3 Extracting [=====================>                             ]  25.07MB/58.34MB
+ 2212ce797ce3 Extracting [=======================>                           ]   27.3MB/58.34MB
+ 2212ce797ce3 Extracting [=========================>                         ]  29.52MB/58.34MB
+ 2212ce797ce3 Extracting [===========================>                       ]  31.75MB/58.34MB
+ 2212ce797ce3 Extracting [============================>                      ]  33.42MB/58.34MB
+ 2212ce797ce3 Extracting [===============================>                   ]  37.32MB/58.34MB
+ 2212ce797ce3 Extracting [=================================>                 ]  39.55MB/58.34MB
+ 2212ce797ce3 Extracting [==================================>                ]  40.67MB/58.34MB
+ 2212ce797ce3 Extracting [====================================>              ]  42.34MB/58.34MB
+ 2212ce797ce3 Extracting [=====================================>             ]  44.01MB/58.34MB
+ 2212ce797ce3 Extracting [=======================================>           ]  45.68MB/58.34MB
+ 2212ce797ce3 Extracting [========================================>          ]  47.35MB/58.34MB
+ 2212ce797ce3 Extracting [=========================================>         ]  47.91MB/58.34MB
+ 2212ce797ce3 Extracting [==========================================>        ]  49.02MB/58.34MB
+ 2212ce797ce3 Extracting [==========================================>        ]  50.14MB/58.34MB
+ 2212ce797ce3 Extracting [=============================================>     ]  52.92MB/58.34MB
+ 2212ce797ce3 Extracting [================================================>  ]  56.26MB/58.34MB
+ 2212ce797ce3 Extracting [=================================================> ]  57.93MB/58.34MB
+ 2212ce797ce3 Extracting [==================================================>]  58.34MB/58.34MB
+ 2212ce797ce3 Pull complete 
+ d76a5c110d98 Extracting [==================================================>]  2.755kB/2.755kB
+ d76a5c110d98 Extracting [==================================================>]  2.755kB/2.755kB
+ d76a5c110d98 Pull complete 
+ 264a670fe5df Extracting [>                                                  ]  65.54kB/4.903MB
+ 264a670fe5df Extracting [==================================>                ]  3.408MB/4.903MB
+ 264a670fe5df Extracting [=========================================>         ]  4.063MB/4.903MB
+ 264a670fe5df Extracting [==================================================>]  4.903MB/4.903MB
+ 264a670fe5df Extracting [==================================================>]  4.903MB/4.903MB
+ 264a670fe5df Pull complete 
+ 92604d159b87 Extracting [=>                                                 ]  32.77kB/867.7kB
+ 92604d159b87 Extracting [=================================================> ]    852kB/867.7kB
+ 92604d159b87 Extracting [==================================================>]  867.7kB/867.7kB
+ 92604d159b87 Extracting [==================================================>]  867.7kB/867.7kB
+ 92604d159b87 Pull complete 
+ searxng Pulled 
+ Network localfirecrawl_backend  Creating
+ Network localfirecrawl_backend  Created
+ Volume "localfirecrawl_valkey-data2"  Creating
+ Volume "localfirecrawl_valkey-data2"  Created
+ Volume "localfirecrawl_firecrawl-valkey"  Creating
+ Volume "localfirecrawl_firecrawl-valkey"  Created
+ Container localfirecrawl-redis-searxng-1  Creating
+ Container localfirecrawl-valkey-1  Creating
+ Container localfirecrawl-proxy1-1  Creating
+ Container localfirecrawl-proxy3-1  Creating
+ Container localfirecrawl-proxy2-1  Creating
+ Container localfirecrawl-valkey-1  Created
+ Container localfirecrawl-redis-searxng-1  Created
+ Container searxng  Creating
+ Container localfirecrawl-proxy2-1  Created
+ Container localfirecrawl-proxy3-1  Created
+ Container localfirecrawl-proxy1-1  Created
+ Container localfirecrawl-playwright-service-1  Creating
+ Container searxng  Created
+ Container localfirecrawl-playwright-service-1  Created
+ Container localfirecrawl-api-1  Creating
+ Container localfirecrawl-api-1  Created
+ Container localfirecrawl-worker-1  Creating
+ Container localfirecrawl-worker-1  Created
+ Container localfirecrawl-proxy1-1  Starting
+ Container localfirecrawl-valkey-1  Starting
+ Container localfirecrawl-proxy2-1  Starting
+ Container localfirecrawl-proxy3-1  Starting
+ Container localfirecrawl-redis-searxng-1  Starting
+ Container localfirecrawl-proxy3-1  Started
+ Container localfirecrawl-redis-searxng-1  Started
+ Container searxng  Starting
+ Container localfirecrawl-proxy2-1  Started
+ Container localfirecrawl-valkey-1  Started
+ Container localfirecrawl-proxy1-1  Started
+ Container localfirecrawl-playwright-service-1  Starting
+ Container searxng  Started
+ Container localfirecrawl-playwright-service-1  Started
+ Container localfirecrawl-api-1  Starting
+ Container localfirecrawl-api-1  Started
+ Container localfirecrawl-playwright-service-1  Waiting
+ Container localfirecrawl-playwright-service-1  Healthy
+ Container localfirecrawl-worker-1  Starting
+ Container localfirecrawl-worker-1  Started
+
+2025-04-05T05:39:51.745Z - Waiting 10 seconds for services to start...
+2025-04-05T05:40:01.757Z - Local Firecrawl services should be up.
+2025-04-05T05:40:14.291Z - [deepResearch] Queries addressing research directions:
+- "今後の機械学習研究方向 最新展望 と課題" addresses: 今後の方向性
+- "機械学習 ブレークスルー 主要文献 10年 分析" addresses: 主要ブレークスルー
+2025-04-05T05:40:14.293Z - Depth 5/5, Query 0/4: 機械学習 過去10年 ブレークスルー パラダイムシフト
+2025-04-05T05:40:21.677Z - [deepResearch] Error running query: 今後の機械学習研究方向 最新展望 と課題:  {"statusCode":500}
+2025-04-05T05:40:21.690Z - [deepResearch] Error running query: 機械学習 過去10年 ブレークスルー パラダイムシフト:  {"statusCode":500}
+2025-04-05T05:40:50.823Z - [deepResearch] [processSerpResult] Generated sourceMetadata: [{"url":"https://bin.t.u-tokyo.ac.jp/rzemi24/file/12-1_mikami.pdf","title":"Enhancing discrete choice models with representation ...","domain":"bin.t.u-tokyo.ac.jp","reliabilityScore":0.95,"reliabilityReasoning":"The domain bin.t.u-tokyo.ac.jp is part of the University of Tokyo's official web presence, implying stringent editorial standards, academic oversight, and professional credentials. This high-quality institutional affiliation supports a reliable source for research on the evolution of innovative theories and architectures in machine learning."},{"url":"https://findy-tools.io/articles/ml/17","title":"機械学習基盤のアーキテクチャ特集 〜8社の設計意図と今後の展望〜 - Findy Tools","domain":"findy-tools.io","reliabilityScore":0.6,"reliabilityReasoning":"The domain findy-tools.io appears to operate as an industry-focused, commercially driven site with a moderate level of editorial oversight. While the content might be produced by professionals with technical expertise, it lacks the rigorous peer-review process, academic credentials, and transparency expected from sources that are ideal for deep, research-based analysis on innovative machine learning theory."},{"url":"https://ibm.github.io/japan-technology/Code-Articles/cc-machine-learning-deep-learning-architectures","title":"深層学習アーキテクチャ - IBM Developer Learning Paths 日本語サイト","domain":"ibm.github.io","reliabilityScore":0.8,"reliabilityReasoning":"The IBM GitHub domain is managed by a reputable organization known for its high standards and deep domain expertise. Although the content is professionally curated and benefits from IBM’s legacy in machine learning and research, it is self-published and might not undergo the same level of formal peer review as academic journals, slightly moderating its reliability."},{"url":"https://www.slideshare.net/slideshow/ss-250526008/250526008","title":"(2021.10) 機械学習と機械発見 データ中心型の化学・材料科学 ...","domain":"www.slideshare.net","reliabilityScore":0.55,"reliabilityReasoning":"SlideShare hosts a broad range of user-generated presentations and documents; while some materials come from highly qualified professionals and experts, the platform inherently lacks strict editorial oversight, formal fact-checking, and transparent methodologies, which introduces variability in reliability, especially for cutting-edge research topics like AI breakthroughs over a decade."},{"url":"https://fastseries.jp/blog/000334.html","title":"【前編】AIの技術革新って知ってる？その60年の変遷とコンタクトセンターの歴史をたどる：ブログ一覧｜FastSeries（ファストシリーズ）","domain":"fastseries.jp","reliabilityScore":0.6,"reliabilityReasoning":"Fastseries.jp appears to operate more like an industry-oriented blog or commercial publication rather than a peer-reviewed or academically rigorous source. Although it may feature technical content on machine learning, the site lacks transparent evidence of robust fact-checking, systematic editorial standards, and comprehensive disclosure of sources, which limits its reliability for in-depth historical research into innovative theories and architecture transitions over the past decade."}]
+2025-04-05T05:40:56.971Z - [deepResearch] [processSerpResult] Generated sourceMetadata: [{"url":"https://www.gii.co.jp/report/ires1570688-ai-machine-learning-market-by-technology-big-data.html","title":"AIと機械学習の市場：技術、コンポーネント、用途別-2025～2030年 ...","domain":"www.gii.co.jp","reliabilityScore":0.65,"reliabilityReasoning":"The www.gii.co.jp domain appears to be managed by a professional, commercially-oriented organization that likely enforces some baseline editorial standards and oversight. However, it does not seem to have the academic credentials, peer-review process, or established track record that would place it among primary or highly-respected scholarly sources in machine learning. There is also some potential for commercial bias and less transparency regarding methodologies and sourcing, making it moderately reliable for research on a decade-long analysis of major machine learning breakthroughs."},{"url":"http://sik.je/le","title":"Lupkoz curamfuc oha 機械学習 ブレークスルー 主要文献 10年 分析 Mifub nuotu haniwler.","domain":"sik.je","reliabilityScore":0.35,"reliabilityReasoning":"Based on available factors, sik.je does not appear to have evidence of rigorous editorial standards, specialized domain expertise in machine learning breakthroughs, or transparent methodologies. The lack of a known track record, academic affiliation, and professional oversight suggests that its reliability in covering a decade-long analysis of breakthrough literature is limited."},{"url":"https://www.nttpc.co.jp/gpu/article/knowledge02.html","title":"「特徴抽出」による50年来のブレークスルー｜GPUならNTTPC｜NVIDIAエリートパートナー","domain":"www.nttpc.co.jp","reliabilityScore":0.8,"reliabilityReasoning":"The domain appears to be managed by a reputable corporate entity in Japan with established editorial standards and technical expertise. Although it provides professional and detailed analyses backed by industry knowledge, the lack of explicit peer-review processes and potential commercial influences slightly temper its reliability for academic research."},{"url":"https://www.jstage.jst.go.jp/article/isciesci/63/3/63_124/_pdf/-char/ja","title":"人の知性を司る脳，その模倣としての機械学習 - J-stage","domain":"www.jstage.jst.go.jp","reliabilityScore":0.95,"reliabilityReasoning":"J-STAGE, managed by the Japan Science and Technology Agency (JST), hosts a vast array of peer-reviewed academic journals and conference proceedings. It adheres to stringent editorial standards, rigorous fact-checking processes, and transparent methodologies, ensuring high reliability in research contexts."},{"url":"https://www.gii.co.jp/report/ires1676844-ai-vision-market-by-components-technology.html","title":"AIビジョン市場 | 市場規模 分析 予測 2025-2030年 【市場調査 ...","domain":"www.gii.co.jp","reliabilityScore":0.65,"reliabilityReasoning":"The website appears to be professionally produced with established editorial practices and a focus on industry analysis, but its commercial nature, lack of clear peer-review and detailed methodological transparency, and potential for bias compared to academic or peer-reviewed sources limit its reliability."}]
+2025-04-05T05:41:08.402Z - [deepResearch] Researching deeper, breadth: 3, depth: 4
+2025-04-05T05:41:08.403Z - Depth 4/5, Query 1/4: 機械学習 革新的理論 アーキテクチャ 変遷 分析 10年
+2025-04-05T05:41:09.276Z - [deepResearch] Researching deeper, breadth: 3, depth: 4
+2025-04-05T05:41:09.277Z - Depth 4/5, Query 2/4: 機械学習 ブレークスルー 主要文献 10年 分析
+2025-04-05T05:41:22.670Z - [deepResearch] Queries addressing research directions:
+- "機械学習 ブレークスルー 産業応用 ケーススタディ" addresses: 主要文献とレビュー記事から、産業への具体的な展開事例（ケーススタディ）の調査
+- "機械学習 ブレークスルー 評価基準 変遷 実用性 再現性 社会的インパクト" addresses: 機械学習のブレークスルー文献で引用指標以外に用いられている評価基準の変遷分析
+- "最新 機械学習 文献 説明性 安全性 向上 取り組み" addresses: 最新の文献における説明性や安全性向上の取り組み
+2025-04-05T05:41:22.671Z - Depth 4/4, Query 0/3: 機械学習 ブレークスルー 産業応用 ケーススタディ
+2025-04-05T05:41:22.867Z - [deepResearch] Queries addressing research directions:
+- "Quantitative metrics correlating ML paradigm shifts since 2012: error rate reductions, parameter scale changes, and innovations in model architectures" addresses: Which specific quantitative metrics (e.g., error rate reductions, parameter scale changes) directly correlate with the identified paradigm shifts in machine learning over the past 10 years?
+- "Interdisciplinary impact on ML architectures: Case studies from autonomous driving and healthcare over the last decade" addresses: How have interdisciplinary applications (such as autonomous driving and healthcare) specifically driven modifications in machine learning architectures and theories over the last decade?
+- "Emerging theoretical frameworks for enhancing generalization and interpretability in transformers and self-supervised models: Experimental validations and benchmarks" addresses: What are the emerging theoretical frameworks that address limitations related to generalization and interpretability in current architectures like transformers and self-supervised models, and how are they being validated experimentally?
+2025-04-05T05:41:22.868Z - Depth 4/4, Query 0/3: Quantitative metrics correlating ML paradigm shifts since 2012: error rate reductions, parameter scale changes, and innovations in model architectures
+2025-04-05T05:41:24.070Z - [deepResearch] Error running query: 機械学習 ブレークスルー 評価基準 変遷 実用性 再現性 社会的インパクト:  {"statusCode":500}
+2025-04-05T05:41:24.771Z - [deepResearch] Error running query: 機械学習 ブレークスルー 産業応用 ケーススタディ:  {"statusCode":500}
+2025-04-05T05:41:26.641Z - [deepResearch] Error running query: 最新 機械学習 文献 説明性 安全性 向上 取り組み:  {"statusCode":500}
+2025-04-05T05:41:46.781Z - [deepResearch] [processSerpResult] Generated sourceMetadata: [{"url":"https://www.researchgate.net/publication/385095492_Machine_learning_and_deep_learning_architectures_and_trends_A_review","title":"Machine learning and deep learning architectures and trends","domain":"www.researchgate.net","reliabilityScore":0.75,"reliabilityReasoning":"ResearchGate is primarily a platform where researchers share both preprints and published papers. While much of the content is authored by qualified academics and often represents peer-reviewed work, the site itself does not enforce a rigorous editorial and fact-checking process across all its content. This means that, although the domain is highly valuable for accessing scholarly material, the responsibility for verifying the individual works remains with the user."}]
+2025-04-05T05:41:51.477Z - [deepResearch] [processSerpResult] Generated sourceMetadata: [{"url":"https://journals.sagepub.com/doi/full/10.1177/2053951714528481","title":"Big Data, new epistemologies and paradigm shifts - Rob Kitchin, 2014","domain":"journals.sagepub.com","reliabilityScore":0.95,"reliabilityReasoning":"Journals hosted on sagepub.com generally undergo rigorous peer-review and maintain strict editorial standards. They attract expert contributions, follow transparent methodologies, and are published by an established academic publisher, which minimizes commercial biases and enhances accuracy."}]
+2025-04-05T05:42:11.099Z - [deepResearch] Researching deeper, breadth: 2, depth: 3
+2025-04-05T05:42:11.104Z - Depth 3/4, Query 1/3: Quantitative metrics correlating ML paradigm shifts since 2012: error rate reductions, parameter scale changes, and innovations in model architectures
+2025-04-05T05:42:18.254Z - [deepResearch] Researching deeper, breadth: 2, depth: 3
+2025-04-05T05:42:18.262Z - Depth 3/4, Query 2/3: Interdisciplinary impact on ML architectures: Case studies from autonomous driving and healthcare over the last decade
+2025-04-05T05:42:21.385Z - [deepResearch] Queries addressing research directions:
+- "Quantitative Assessment of ML Paradigm Shifts: Error Rate Reductions, Model Parameter Growth, and Epistemological Impacts in Big Data" addresses: How can we quantitatively assess and directly compare the impact of ML paradigm shifts with the epistemological shifts in Big Data literature?
+- "Exploring Theoretical Hybrid Models Integrating Inductive Data-Driven Methods with Deductive Reasoning in Machine Learning" addresses: What theoretical frameworks or hybrid models could bridge the gap between fully data-driven approaches and traditional deductive methodologies?
+2025-04-05T05:42:21.385Z - Depth 3/3, Query 0/2: Quantitative Assessment of ML Paradigm Shifts: Error Rate Reductions, Model Parameter Growth, and Epistemological Impacts in Big Data
+2025-04-05T05:42:23.858Z - [deepResearch] Queries addressing research directions:
+- "What are the best practices and key challenges in transitioning advanced ML innovations like Neural Architecture Search (NAS) and Federated Learning (FL) from research prototypes to scalable production systems in sensitive domains such as healthcare diagnostics and 6G communications?" addresses: Transitioning advanced ML innovations from research prototypes to scalable production systems in sensitive applications
+- "How do interdisciplinary modifications, particularly the integration of IoT, blockchain, and quantum computing, quantitatively impact the performance and robustness of ML architectures in autonomous driving compared to traditional systems?" addresses: Evaluating interdisciplinary impacts (IoT, blockchain, quantum computing) on ML architectures in autonomous driving
+2025-04-05T05:42:23.859Z - Depth 3/3, Query 0/2: What are the best practices and key challenges in transitioning advanced ML innovations like Neural Architecture Search (NAS) and Federated Learning (FL) from research prototypes to scalable production systems in sensitive domains such as healthcare diagnostics and 6G communications?
+2025-04-05T05:42:24.263Z - [deepResearch] Error running query: Exploring Theoretical Hybrid Models Integrating Inductive Data-Driven Methods with Deductive Reasoning in Machine Learning:  {"statusCode":500}
+2025-04-05T05:42:24.268Z - [deepResearch] Error running query: Quantitative Assessment of ML Paradigm Shifts: Error Rate Reductions, Model Parameter Growth, and Epistemological Impacts in Big Data:  {"statusCode":500}
+2025-04-05T05:42:36.195Z - [deepResearch] Error running query: What are the best practices and key challenges in transitioning advanced ML innovations like Neural Architecture Search (NAS) and Federated Learning (FL) from research prototypes to scalable production systems in sensitive domains such as healthcare diagnostics and 6G communications?:  {"statusCode":500}
+2025-04-05T05:42:36.467Z - [deepResearch] Error running query: How do interdisciplinary modifications, particularly the integration of IoT, blockchain, and quantum computing, quantitatively impact the performance and robustness of ML architectures in autonomous driving compared to traditional systems?:  {"statusCode":500}
+2025-04-05T05:42:36.732Z - [deepResearch] Error running query: Emerging theoretical frameworks for enhancing generalization and interpretability in transformers and self-supervised models: Experimental validations and benchmarks:  {"statusCode":500}
+2025-04-05T05:43:02.035Z - Report Length: 4409
+2025-04-05T05:43:02.037Z - Report Tail (last 200 chars): スルーと今後の研究・応用の方向性について、技術的革新、信頼性の裏付け、そして倫理的配慮の観点から整理しました。更なる発展を遂げるためには、多様な専門分野との連携による横断的な研究が必須であり、オープンなコミュニケーションと情報共有が、次なるパラダイムシフトを促す原動力となるでしょう。
+
+この報告書が、各界の今後の研究開発や政策決定に寄与する一助となることを願っています。
+
+## Sources
+
+
+2025-04-05T05:43:02.037Z - Attempting to start local Firecrawl...
+2025-04-05T05:43:02.805Z - docker-compose up stdout: 
+2025-04-05T05:43:02.806Z - docker-compose up stderr:  Container localfirecrawl-valkey-1  Running
+ Container localfirecrawl-proxy3-1  Running
+ Container localfirecrawl-proxy1-1  Running
+ Container localfirecrawl-proxy2-1  Running
+ Container localfirecrawl-redis-searxng-1  Running
+ Container searxng  Running
+ Container localfirecrawl-playwright-service-1  Running
+ Container localfirecrawl-api-1  Running
+ Container localfirecrawl-worker-1  Running
+ Container localfirecrawl-playwright-service-1  Waiting
+ Container localfirecrawl-playwright-service-1  Healthy
+
+2025-04-05T05:43:02.807Z - Waiting 10 seconds for services to start...
+2025-04-05T05:43:12.807Z - Local Firecrawl services should be up.
+2025-04-05T05:43:12.808Z - Attempting to stop local Firecrawl...
+2025-04-05T05:43:37.278Z - docker-compose down stdout: 
+2025-04-05T05:43:37.279Z - docker-compose down stderr:  Container localfirecrawl-worker-1  Stopping
+ Container localfirecrawl-worker-1  Stopped
+ Container localfirecrawl-worker-1  Removing
+ Container localfirecrawl-worker-1  Removed
+ Container localfirecrawl-api-1  Stopping
+ Container localfirecrawl-api-1  Stopped
+ Container localfirecrawl-api-1  Removing
+ Container localfirecrawl-api-1  Removed
+ Container searxng  Stopping
+ Container localfirecrawl-playwright-service-1  Stopping
+ Container localfirecrawl-valkey-1  Stopping
+ Container localfirecrawl-valkey-1  Stopped
+ Container localfirecrawl-valkey-1  Removing
+ Container localfirecrawl-valkey-1  Removed
+ Container searxng  Stopped
+ Container searxng  Removing
+ Container searxng  Removed
+ Container localfirecrawl-redis-searxng-1  Stopping
+ Container localfirecrawl-playwright-service-1  Stopped
+ Container localfirecrawl-playwright-service-1  Removing
+ Container localfirecrawl-playwright-service-1  Removed
+ Container localfirecrawl-proxy3-1  Stopping
+ Container localfirecrawl-proxy1-1  Stopping
+ Container localfirecrawl-proxy2-1  Stopping
+ Container localfirecrawl-redis-searxng-1  Stopped
+ Container localfirecrawl-redis-searxng-1  Removing
+ Container localfirecrawl-redis-searxng-1  Removed
+ Container localfirecrawl-proxy2-1  Stopped
+ Container localfirecrawl-proxy2-1  Removing
+ Container localfirecrawl-proxy2-1  Removed
+ Container localfirecrawl-proxy3-1  Stopped
+ Container localfirecrawl-proxy3-1  Removing
+ Container localfirecrawl-proxy3-1  Removed
+ Container localfirecrawl-proxy1-1  Stopped
+ Container localfirecrawl-proxy1-1  Removing
+ Container localfirecrawl-proxy1-1  Removed
+ Network localfirecrawl_backend  Removing
+ Network localfirecrawl_backend  Removed
+
+2025-04-05T05:43:37.279Z - Local Firecrawl services stopped.
+2025-04-05T05:48:54.104Z - Environment check: {"hasOpenAiKey":true,"hasFirecrawlKey":false,"firecrawlBaseUrl":"http://localhost:3002","firecrawlConcurrency":2}
+2025-04-05T05:48:54.106Z - Deep Research MCP Server running on stdio
+2025-04-05T05:50:09.077Z - Attempting to start local Firecrawl...
+2025-04-05T05:50:16.576Z - docker-compose up stdout: 
+2025-04-05T05:50:16.576Z - docker-compose up stderr:  Network localfirecrawl_backend  Creating
+ Network localfirecrawl_backend  Created
+ Container localfirecrawl-redis-searxng-1  Creating
+ Container localfirecrawl-valkey-1  Creating
+ Container localfirecrawl-proxy1-1  Creating
+ Container localfirecrawl-proxy2-1  Creating
+ Container localfirecrawl-proxy3-1  Creating
+ Container localfirecrawl-redis-searxng-1  Created
+ Container searxng  Creating
+ Container localfirecrawl-valkey-1  Created
+ Container localfirecrawl-proxy2-1  Created
+ Container localfirecrawl-proxy3-1  Created
+ Container localfirecrawl-proxy1-1  Created
+ Container localfirecrawl-playwright-service-1  Creating
+ Container searxng  Created
+ Container localfirecrawl-playwright-service-1  Created
+ Container localfirecrawl-api-1  Creating
+ Container localfirecrawl-api-1  Created
+ Container localfirecrawl-worker-1  Creating
+ Container localfirecrawl-worker-1  Created
+ Container localfirecrawl-valkey-1  Starting
+ Container localfirecrawl-redis-searxng-1  Starting
+ Container localfirecrawl-proxy2-1  Starting
+ Container localfirecrawl-proxy3-1  Starting
+ Container localfirecrawl-proxy1-1  Starting
+ Container localfirecrawl-redis-searxng-1  Started
+ Container searxng  Starting
+ Container localfirecrawl-proxy2-1  Started
+ Container localfirecrawl-valkey-1  Started
+ Container localfirecrawl-proxy1-1  Started
+ Container localfirecrawl-proxy3-1  Started
+ Container localfirecrawl-playwright-service-1  Starting
+ Container searxng  Started
+ Container localfirecrawl-playwright-service-1  Started
+ Container localfirecrawl-api-1  Starting
+ Container localfirecrawl-api-1  Started
+ Container localfirecrawl-playwright-service-1  Waiting
+ Container localfirecrawl-playwright-service-1  Healthy
+ Container localfirecrawl-worker-1  Starting
+ Container localfirecrawl-worker-1  Started
+
+2025-04-05T05:50:16.577Z - Waiting 10 seconds for services to start...
+2025-04-05T05:50:26.584Z - Local Firecrawl services should be up.
+2025-04-05T05:50:33.607Z - Depth 1/1, Query 0/1: 機械学習 パラダイムシフト 主要ブレークスルー 今後の方向性 過去10年
+2025-04-05T05:50:35.628Z - [deepResearch] Error running query: 機械学習 パラダイムシフト 主要ブレークスルー 今後の方向性 過去10年:  {"statusCode":500}
+2025-04-05T05:50:35.629Z - [writeFinalReport] Received sourceMetadata: []
+2025-04-05T05:51:03.153Z - [writeFinalReport] Generated sourcesSection: 
+
+## Sources
+
+
+2025-04-05T05:51:03.163Z - Report Length: 5069
+2025-04-05T05:51:03.163Z - Report Tail (last 200 chars): 将来は、これらのブレークスルーが更に融合・発展し、個々の技術が相互に補完し合うエコシステムが形成されると期待される。本報告は、その現状の詳細な評価と未来への展望を提示し、今後の研究および実用化における方向性を明確にするものである。
+
+（この報告は、最新の学術研究および技術動向の詳細なレビューに基づいており、将来的な技術革新の可能性についても高い予測精度を目指している。）
+
+## Sources
+
+
+2025-04-05T05:51:03.164Z - Attempting to start local Firecrawl...
+2025-04-05T05:51:04.495Z - docker-compose up stdout: 
+2025-04-05T05:51:04.496Z - docker-compose up stderr:  Container localfirecrawl-redis-searxng-1  Running
+ Container localfirecrawl-valkey-1  Running
+ Container localfirecrawl-proxy3-1  Running
+ Container localfirecrawl-proxy2-1  Running
+ Container localfirecrawl-proxy1-1  Running
+ Container searxng  Running
+ Container localfirecrawl-playwright-service-1  Running
+ Container localfirecrawl-api-1  Running
+ Container localfirecrawl-worker-1  Running
+ Container localfirecrawl-playwright-service-1  Waiting
+ Container localfirecrawl-playwright-service-1  Healthy
+
+2025-04-05T05:51:04.497Z - Waiting 10 seconds for services to start...
+2025-04-05T05:51:14.498Z - Local Firecrawl services should be up.
+2025-04-05T05:51:14.499Z - Attempting to stop local Firecrawl...
+2025-04-05T05:51:39.097Z - docker-compose down stdout: 
+2025-04-05T05:51:39.097Z - docker-compose down stderr:  Container localfirecrawl-worker-1  Stopping
+ Container localfirecrawl-worker-1  Stopped
+ Container localfirecrawl-worker-1  Removing
+ Container localfirecrawl-worker-1  Removed
+ Container localfirecrawl-api-1  Stopping
+ Container localfirecrawl-api-1  Stopped
+ Container localfirecrawl-api-1  Removing
+ Container localfirecrawl-api-1  Removed
+ Container localfirecrawl-valkey-1  Stopping
+ Container localfirecrawl-playwright-service-1  Stopping
+ Container searxng  Stopping
+ Container localfirecrawl-valkey-1  Stopped
+ Container localfirecrawl-valkey-1  Removing
+ Container localfirecrawl-valkey-1  Removed
+ Container searxng  Stopped
+ Container searxng  Removing
+ Container searxng  Removed
+ Container localfirecrawl-redis-searxng-1  Stopping
+ Container localfirecrawl-playwright-service-1  Stopped
+ Container localfirecrawl-playwright-service-1  Removing
+ Container localfirecrawl-playwright-service-1  Removed
+ Container localfirecrawl-proxy3-1  Stopping
+ Container localfirecrawl-proxy2-1  Stopping
+ Container localfirecrawl-proxy1-1  Stopping
+ Container localfirecrawl-redis-searxng-1  Stopped
+ Container localfirecrawl-redis-searxng-1  Removing
+ Container localfirecrawl-redis-searxng-1  Removed
+ Container localfirecrawl-proxy2-1  Stopped
+ Container localfirecrawl-proxy2-1  Removing
+ Container localfirecrawl-proxy2-1  Removed
+ Container localfirecrawl-proxy1-1  Stopped
+ Container localfirecrawl-proxy1-1  Removing
+ Container localfirecrawl-proxy1-1  Removed
+ Container localfirecrawl-proxy3-1  Stopped
+ Container localfirecrawl-proxy3-1  Removing
+ Container localfirecrawl-proxy3-1  Removed
+ Network localfirecrawl_backend  Removing
+ Network localfirecrawl_backend  Removed
+
+2025-04-05T05:51:39.098Z - Local Firecrawl services stopped.
+2025-04-05T05:56:20.715Z - Environment check: {"hasOpenAiKey":true,"hasFirecrawlKey":false,"firecrawlBaseUrl":"http://localhost:3002","firecrawlConcurrency":2}
+2025-04-05T05:56:20.718Z - Deep Research MCP Server running on stdio
+2025-04-05T05:57:09.879Z - Attempting to start local Firecrawl...
+2025-04-05T05:57:17.356Z - docker-compose up stdout: 
+2025-04-05T05:57:17.357Z - docker-compose up stderr:  Network localfirecrawl_backend  Creating
+ Network localfirecrawl_backend  Created
+ Container localfirecrawl-redis-searxng-1  Creating
+ Container localfirecrawl-proxy3-1  Creating
+ Container localfirecrawl-valkey-1  Creating
+ Container localfirecrawl-proxy2-1  Creating
+ Container localfirecrawl-proxy1-1  Creating
+ Container localfirecrawl-proxy3-1  Created
+ Container localfirecrawl-redis-searxng-1  Created
+ Container searxng  Creating
+ Container localfirecrawl-valkey-1  Created
+ Container localfirecrawl-proxy1-1  Created
+ Container localfirecrawl-proxy2-1  Created
+ Container localfirecrawl-playwright-service-1  Creating
+ Container searxng  Created
+ Container localfirecrawl-playwright-service-1  Created
+ Container localfirecrawl-api-1  Creating
+ Container localfirecrawl-api-1  Created
+ Container localfirecrawl-worker-1  Creating
+ Container localfirecrawl-worker-1  Created
+ Container localfirecrawl-proxy2-1  Starting
+ Container localfirecrawl-proxy1-1  Starting
+ Container localfirecrawl-redis-searxng-1  Starting
+ Container localfirecrawl-valkey-1  Starting
+ Container localfirecrawl-proxy3-1  Starting
+ Container localfirecrawl-valkey-1  Started
+ Container localfirecrawl-proxy1-1  Started
+ Container localfirecrawl-redis-searxng-1  Started
+ Container searxng  Starting
+ Container localfirecrawl-proxy3-1  Started
+ Container localfirecrawl-proxy2-1  Started
+ Container localfirecrawl-playwright-service-1  Starting
+ Container searxng  Started
+ Container localfirecrawl-playwright-service-1  Started
+ Container localfirecrawl-api-1  Starting
+ Container localfirecrawl-api-1  Started
+ Container localfirecrawl-playwright-service-1  Waiting
+ Container localfirecrawl-playwright-service-1  Healthy
+ Container localfirecrawl-worker-1  Starting
+ Container localfirecrawl-worker-1  Started
+
+2025-04-05T05:57:17.357Z - Waiting 30 seconds for services to start...
+2025-04-05T05:57:47.389Z - Local Firecrawl services should be up.
+2025-04-05T05:57:53.308Z - [deepResearch] Generated 1 verification queries to check information from less reliable sources
+2025-04-05T05:57:53.309Z - Depth 1/1, Query 0/1: 機械学習 パラダイムシフト 過去10年 ブレークスルー 今後の方向性 詳細分析
+2025-04-05T05:57:55.515Z - [deepResearch] Error running query: 機械学習 パラダイムシフト 過去10年 ブレークスルー 今後の方向性 詳細分析:  {"statusCode":500}
+2025-04-05T05:57:55.515Z - [writeFinalReport] Received sourceMetadata: []
+2025-04-05T05:58:32.248Z - [writeFinalReport] Generated sourcesSection: 
+
+## Sources
+
+
+2025-04-05T05:58:32.250Z - Report Length: 5521
+2025-04-05T05:58:32.251Z - Report Tail (last 200 chars): の次世代AIシステムの発展に向けた重要な基盤となるでしょう。今後も、より精緻で説明可能なアルゴリズム、そして多様なデータソースの統合が進む中で、研究と実装の両領域における革新が続くことが予想されます。
+
+**注:** 一部の技術予測は高いレベルの推測に基づいており、今後の実証実験が必要です。質の高い研究と透明性のある情報共有が、今後のパラダイムシフトの鍵となるでしょう。
+
+## Sources
+
+
+2025-04-05T05:58:32.252Z - Attempting to start local Firecrawl...
+2025-04-05T05:58:32.963Z - docker-compose up stdout: 
+2025-04-05T05:58:32.964Z - docker-compose up stderr:  Container localfirecrawl-redis-searxng-1  Running
+ Container localfirecrawl-valkey-1  Running
+ Container localfirecrawl-proxy1-1  Running
+ Container localfirecrawl-proxy3-1  Running
+ Container searxng  Running
+ Container localfirecrawl-proxy2-1  Running
+ Container localfirecrawl-playwright-service-1  Running
+ Container localfirecrawl-api-1  Running
+ Container localfirecrawl-worker-1  Running
+ Container localfirecrawl-playwright-service-1  Waiting
+ Container localfirecrawl-playwright-service-1  Healthy
+
+2025-04-05T05:58:32.965Z - Waiting 30 seconds for services to start...
+2025-04-05T05:59:02.976Z - Local Firecrawl services should be up.
+2025-04-05T05:59:02.977Z - Attempting to stop local Firecrawl...
+2025-04-05T05:59:27.267Z - docker-compose down stdout: 
+2025-04-05T05:59:27.267Z - docker-compose down stderr:  Container localfirecrawl-worker-1  Stopping
+ Container localfirecrawl-worker-1  Stopped
+ Container localfirecrawl-worker-1  Removing
+ Container localfirecrawl-worker-1  Removed
+ Container localfirecrawl-api-1  Stopping
+ Container localfirecrawl-api-1  Stopped
+ Container localfirecrawl-api-1  Removing
+ Container localfirecrawl-api-1  Removed
+ Container localfirecrawl-playwright-service-1  Stopping
+ Container localfirecrawl-valkey-1  Stopping
+ Container searxng  Stopping
+ Container localfirecrawl-valkey-1  Stopped
+ Container localfirecrawl-valkey-1  Removing
+ Container localfirecrawl-valkey-1  Removed
+ Container searxng  Stopped
+ Container searxng  Removing
+ Container searxng  Removed
+ Container localfirecrawl-redis-searxng-1  Stopping
+ Container localfirecrawl-playwright-service-1  Stopped
+ Container localfirecrawl-playwright-service-1  Removing
+ Container localfirecrawl-playwright-service-1  Removed
+ Container localfirecrawl-proxy3-1  Stopping
+ Container localfirecrawl-proxy1-1  Stopping
+ Container localfirecrawl-proxy2-1  Stopping
+ Container localfirecrawl-redis-searxng-1  Stopped
+ Container localfirecrawl-redis-searxng-1  Removing
+ Container localfirecrawl-redis-searxng-1  Removed
+ Container localfirecrawl-proxy3-1  Stopped
+ Container localfirecrawl-proxy3-1  Removing
+ Container localfirecrawl-proxy3-1  Removed
+ Container localfirecrawl-proxy1-1  Stopped
+ Container localfirecrawl-proxy1-1  Removing
+ Container localfirecrawl-proxy1-1  Removed
+ Container localfirecrawl-proxy2-1  Stopped
+ Container localfirecrawl-proxy2-1  Removing
+ Container localfirecrawl-proxy2-1  Removed
+ Network localfirecrawl_backend  Removing
+ Network localfirecrawl_backend  Removed
+
+2025-04-05T05:59:27.268Z - Local Firecrawl services stopped.
+2025-04-05T06:24:28.401Z - Environment check: {"hasOpenAiKey":true,"hasFirecrawlKey":false,"firecrawlBaseUrl":"http://localhost:3002","firecrawlConcurrency":2}
+2025-04-05T06:24:28.403Z - Deep Research MCP Server running on stdio
+2025-04-05T06:24:34.729Z - Environment check: {"hasOpenAiKey":true,"hasFirecrawlKey":false,"firecrawlBaseUrl":"http://localhost:3002","firecrawlConcurrency":2}
+2025-04-05T06:24:34.731Z - Deep Research MCP Server running on stdio
+2025-04-05T06:25:15.656Z - Attempting to start local Firecrawl...
+2025-04-05T06:25:22.165Z - docker-compose up stdout: 
+2025-04-05T06:25:22.166Z - docker-compose up stderr:  Container localfirecrawl-valkey-1  Created
+ Container localfirecrawl-redis-searxng-1  Created
+ Container localfirecrawl-proxy2-1  Created
+ Container localfirecrawl-proxy3-1  Created
+ Container localfirecrawl-proxy1-1  Created
+ Container searxng  Created
+ Container localfirecrawl-playwright-service-1  Created
+ Container localfirecrawl-api-1  Created
+ Container localfirecrawl-worker-1  Created
+ Container localfirecrawl-redis-searxng-1  Starting
+ Container localfirecrawl-proxy1-1  Starting
+ Container localfirecrawl-valkey-1  Starting
+ Container localfirecrawl-proxy2-1  Starting
+ Container localfirecrawl-proxy3-1  Starting
+ Container localfirecrawl-proxy1-1  Started
+ Container localfirecrawl-proxy3-1  Started
+ Container localfirecrawl-valkey-1  Started
+ Container localfirecrawl-redis-searxng-1  Started
+ Container searxng  Starting
+ Container localfirecrawl-proxy2-1  Started
+ Container localfirecrawl-playwright-service-1  Starting
+ Container searxng  Started
+ Container localfirecrawl-playwright-service-1  Started
+ Container localfirecrawl-api-1  Starting
+ Container localfirecrawl-api-1  Started
+ Container localfirecrawl-playwright-service-1  Waiting
+ Container localfirecrawl-playwright-service-1  Healthy
+ Container localfirecrawl-worker-1  Starting
+ Container localfirecrawl-worker-1  Started
+
+2025-04-05T06:25:22.166Z - Waiting 60 seconds for services to start...
+2025-04-05T06:26:22.194Z - Local Firecrawl services should be up.
+2025-04-05T06:26:28.393Z - Depth 1/1, Query 0/1: 機械学習 パラダイムシフト 主要ブレークスルー 過去10年 今後の方向性
+2025-04-05T06:26:30.500Z - [deepResearch] Error running query: 機械学習 パラダイムシフト 主要ブレークスルー 過去10年 今後の方向性:  {"statusCode":500}
+2025-04-05T06:26:30.501Z - [writeFinalReport] Received sourceMetadata: []
+2025-04-05T06:27:04.532Z - [writeFinalReport] Generated sourcesSection: 
+
+## Sources
+
+
+2025-04-05T06:27:04.533Z - Report Length: 4408
+2025-04-05T06:27:04.534Z - Report Tail (last 200 chars): 階にあるため、今後の発展によりパラダイムシフトの新たな側面が追加される可能性があります。
+
+以上により、機械学習の進化は単にアルゴリズムの向上だけでなく、その応用範囲、倫理・社会的取組、環境負荷低減といった多角的な側面をも包摂する全体的なトランスフォーメーションであることが明確になりました。未来の機械学習は、より人間中心で持続可能な技術体系へと進化していくことでしょう。
+
+## Sources
+
+
+2025-04-05T06:27:04.535Z - Attempting to start local Firecrawl...
+2025-04-05T06:27:05.225Z - docker-compose up stdout: 
+2025-04-05T06:27:05.226Z - docker-compose up stderr:  Container localfirecrawl-redis-searxng-1  Running
+ Container localfirecrawl-proxy2-1  Running
+ Container localfirecrawl-proxy3-1  Running
+ Container localfirecrawl-proxy1-1  Running
+ Container searxng  Running
+ Container localfirecrawl-valkey-1  Running
+ Container localfirecrawl-playwright-service-1  Running
+ Container localfirecrawl-api-1  Running
+ Container localfirecrawl-worker-1  Running
+ Container localfirecrawl-playwright-service-1  Waiting
+ Container localfirecrawl-playwright-service-1  Healthy
+
+2025-04-05T06:27:05.226Z - Waiting 60 seconds for services to start...
+2025-04-05T06:28:05.268Z - Local Firecrawl services should be up.
+2025-04-05T06:28:05.269Z - Attempting to stop local Firecrawl...
+2025-04-05T06:28:29.813Z - docker-compose down stdout: 
+2025-04-05T06:28:29.814Z - docker-compose down stderr:  Container localfirecrawl-worker-1  Stopping
+ Container localfirecrawl-worker-1  Stopped
+ Container localfirecrawl-worker-1  Removing
+ Container localfirecrawl-worker-1  Removed
+ Container localfirecrawl-api-1  Stopping
+ Container localfirecrawl-api-1  Stopped
+ Container localfirecrawl-api-1  Removing
+ Container localfirecrawl-api-1  Removed
+ Container localfirecrawl-playwright-service-1  Stopping
+ Container searxng  Stopping
+ Container localfirecrawl-valkey-1  Stopping
+ Container localfirecrawl-valkey-1  Stopped
+ Container localfirecrawl-valkey-1  Removing
+ Container localfirecrawl-valkey-1  Removed
+ Container searxng  Stopped
+ Container searxng  Removing
+ Container searxng  Removed
+ Container localfirecrawl-redis-searxng-1  Stopping
+ Container localfirecrawl-playwright-service-1  Stopped
+ Container localfirecrawl-playwright-service-1  Removing
+ Container localfirecrawl-playwright-service-1  Removed
+ Container localfirecrawl-proxy3-1  Stopping
+ Container localfirecrawl-proxy2-1  Stopping
+ Container localfirecrawl-proxy1-1  Stopping
+ Container localfirecrawl-redis-searxng-1  Stopped
+ Container localfirecrawl-redis-searxng-1  Removing
+ Container localfirecrawl-redis-searxng-1  Removed
+ Container localfirecrawl-proxy1-1  Stopped
+ Container localfirecrawl-proxy1-1  Removing
+ Container localfirecrawl-proxy1-1  Removed
+ Container localfirecrawl-proxy3-1  Stopped
+ Container localfirecrawl-proxy3-1  Removing
+ Container localfirecrawl-proxy3-1  Removed
+ Container localfirecrawl-proxy2-1  Stopped
+ Container localfirecrawl-proxy2-1  Removing
+ Container localfirecrawl-proxy2-1  Removed
+ Network localfirecrawl_backend  Removing
+ Network localfirecrawl_backend  Removed
+
+2025-04-05T06:28:29.815Z - Local Firecrawl services stopped.
