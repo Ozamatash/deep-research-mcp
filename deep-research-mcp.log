@@ -1337,3 +1337,131 @@ _最終更新: 2025年4月5日_
 2025-04-05T08:44:20.272Z - Local Firecrawl services stopped.
 2025-04-05T08:44:20.272Z - [MCP Server] Local Firecrawl stopped. Duration: 84625ms
 2025-04-05T08:44:20.273Z - [MCP Server] Total handler execution time (including finally): 262246ms
+2025-04-05T08:55:38.704Z - Environment check: {"hasOpenAiKey":true,"hasFirecrawlKey":false,"firecrawlBaseUrl":"http://localhost:3002","firecrawlConcurrency":2}
+2025-04-05T08:55:38.706Z - Deep Research MCP Server running on stdio
+2025-04-05T08:56:12.076Z - [MCP Server] Starting deep research for query: "量子コンピューティングの最新動向と課題" (Depth: 1, Breadth: 1)
+2025-04-05T08:56:12.077Z - Attempting to start local Firecrawl...
+2025-04-05T08:56:19.487Z - docker-compose up stdout: 
+2025-04-05T08:56:19.487Z - docker-compose up stderr:  Network localfirecrawl_backend  Creating
+ Network localfirecrawl_backend  Created
+ Container localfirecrawl-valkey-1  Creating
+ Container localfirecrawl-proxy1-1  Creating
+ Container localfirecrawl-proxy2-1  Creating
+ Container localfirecrawl-redis-searxng-1  Creating
+ Container localfirecrawl-proxy3-1  Creating
+ Container localfirecrawl-redis-searxng-1  Created
+ Container searxng  Creating
+ Container localfirecrawl-valkey-1  Created
+ Container localfirecrawl-proxy1-1  Created
+ Container localfirecrawl-proxy2-1  Created
+ Container localfirecrawl-proxy3-1  Created
+ Container localfirecrawl-playwright-service-1  Creating
+ Container searxng  Created
+ Container localfirecrawl-playwright-service-1  Created
+ Container localfirecrawl-api-1  Creating
+ Container localfirecrawl-api-1  Created
+ Container localfirecrawl-worker-1  Creating
+ Container localfirecrawl-worker-1  Created
+ Container localfirecrawl-valkey-1  Starting
+ Container localfirecrawl-proxy3-1  Starting
+ Container localfirecrawl-redis-searxng-1  Starting
+ Container localfirecrawl-proxy1-1  Starting
+ Container localfirecrawl-proxy2-1  Starting
+ Container localfirecrawl-valkey-1  Started
+ Container localfirecrawl-proxy3-1  Started
+ Container localfirecrawl-proxy2-1  Started
+ Container localfirecrawl-proxy1-1  Started
+ Container localfirecrawl-playwright-service-1  Starting
+ Container localfirecrawl-redis-searxng-1  Started
+ Container searxng  Starting
+ Container localfirecrawl-playwright-service-1  Started
+ Container searxng  Started
+ Container localfirecrawl-api-1  Starting
+ Container localfirecrawl-api-1  Started
+ Container localfirecrawl-playwright-service-1  Waiting
+ Container localfirecrawl-playwright-service-1  Healthy
+ Container localfirecrawl-worker-1  Starting
+ Container localfirecrawl-worker-1  Started
+
+2025-04-05T08:56:19.488Z - [MCP Server] Waiting for Firecrawl API to become ready...
+2025-04-05T08:56:19.509Z - [MCP Server] Firecrawl API is ready after 20ms (Attempt 1)
+2025-04-05T08:56:19.510Z - [MCP Server] Calling deepResearch function...
+2025-04-05T08:56:25.239Z - Depth 1/1, Query 0/1: 量子コンピューティング 最新動向 課題 2025 年技術展望
+2025-04-05T08:56:25.240Z - [deepResearch] [Deep Research] Running Firecrawl search for query 1/1: "量子コンピューティング 最新動向 課題 2025 年技術展望"
+2025-04-05T08:56:41.770Z - [deepResearch] [Deep Research] Firecrawl search completed for query 1/1. Duration: 16530ms. Found 5 results.
+2025-04-05T08:56:48.052Z - [deepResearch] [processSerpResult] Generated sourceMetadata: [{"url":"https://wired.jp/article/vol55-the-next-industrial-revolution-is-already-here","title":"量子コンピューターにとって2025年は、「次の産業革命」に向けたステップの年：北川拓也インタビュー──特集「THE WORLD IN 2025」 | WIRED.jp","domain":"wired.jp","reliabilityScore":0.85,"reliabilityReasoning":"Wired.jp, as the Japanese arm of the well-established Wired brand, is known for its rigorous editorial standards, fact-checking, and reliance on industry experts. Although it is a professional news source rather than a peer-reviewed academic publication, its transparent methodology and consistent track record in covering technology make it very reliable for research on quantum computing trends and challenges."},{"url":"https://www.idtechex.com/ja/research-report/quantum-computing-market/996","title":"量子コンピューティング市場 2024-2044年：技術、トレンド","domain":"www.idtechex.com","reliabilityScore":0.75,"reliabilityReasoning":"www.idtechex.com is a professional industry news platform that generally adheres to established editorial standards and fact-checking processes, and it is recognized for providing timely and relevant information on technological developments like quantum computing. However, its content is primarily aimed at an industry audience rather than an academic one, and while it is reliable for current trends, it lacks the peer-review level rigor of academic journals, which slightly moderates its reliability score."},{"url":"http://hioka.sj/ozocir","title":"Kuntusjos 量子コンピューティング 最新動向 課題 2025 年技術展望 Kunwedi jid awkaaro hoap gececda.","domain":"hioka.sj","reliabilityScore":0.45,"reliabilityReasoning":"The hioka.sj domain appears to be a less established source with unclear editorial oversight, fact-checking procedures, and transparency regarding methodologies and sourcing. Although it may focus on quantum computing topics, its reputation, professional credentials, and track record in the field are not well recognized, thereby limiting its reliability as a primary research source."},{"url":"https://www.nextech-week.jp/hub/ja-jp/visit/qc.html","title":"量子コンピューティングEXPOの来場案内 | NexTech Week 2025","domain":"www.nextech-week.jp","reliabilityScore":0.75,"reliabilityReasoning":"The domain appears to be run by a professional media outlet with a specific focus on emerging technologies, which suggests reasonable editorial oversight and subject matter expertise, though it does not match the rigorous standards (such as peer review or detailed academic methodologies) expected of primary academic sources. Additionally, potential commercial interests and a focus on news-style reporting could introduce biases in coverage of nuanced topics like quantum computing."},{"url":"https://www.jri.co.jp/page.jsp?id=109810","title":"Quantum Computing Trends and Prospects（量子コンピュータの動向と展望 英語版）","domain":"www.jri.co.jp","reliabilityScore":0.85,"reliabilityReasoning":"www.jri.co.jp is a professional, corporate research institute website with strong editorial standards and domain expertise, as evidenced by its detailed, expert-driven content and consistent track record; however, some potential commercial biases inherent to corporate research may slightly temper its overall objectivity."}]
+2025-04-05T08:56:53.741Z - [deepResearch] [Deep Research] processSerpResult completed for query 1/1. Duration: 11970ms
+2025-04-05T08:56:53.743Z - Depth 0/1, Query 1/1: 量子コンピューティング 最新動向 課題 2025 年技術展望
+2025-04-05T08:56:53.743Z - [deepResearch] [Deep Research] Completed research level. Depth: 1, Breadth: 1
+2025-04-05T08:56:53.744Z - [MCP Server] deepResearch function completed. Duration: 34234ms
+2025-04-05T08:56:53.745Z - [MCP Server] Calling writeFinalReport function...
+2025-04-05T08:56:53.746Z - [writeFinalReport] Received sourceMetadata: [{"url":"https://wired.jp/article/vol55-the-next-industrial-revolution-is-already-here","title":"量子コンピューターにとって2025年は、「次の産業革命」に向けたステップの年：北川拓也インタビュー──特集「THE WORLD IN 2025」 | WIRED.jp","domain":"wired.jp","reliabilityScore":0.85,"reliabilityReasoning":"Wired.jp, as the Japanese arm of the well-established Wired brand, is known for its rigorous editorial standards, fact-checking, and reliance on industry experts. Although it is a professional news source rather than a peer-reviewed academic publication, its transparent methodology and consistent track record in covering technology make it very reliable for research on quantum computing trends and challenges."},{"url":"https://www.idtechex.com/ja/research-report/quantum-computing-market/996","title":"量子コンピューティング市場 2024-2044年：技術、トレンド","domain":"www.idtechex.com","reliabilityScore":0.75,"reliabilityReasoning":"www.idtechex.com is a professional industry news platform that generally adheres to established editorial standards and fact-checking processes, and it is recognized for providing timely and relevant information on technological developments like quantum computing. However, its content is primarily aimed at an industry audience rather than an academic one, and while it is reliable for current trends, it lacks the peer-review level rigor of academic journals, which slightly moderates its reliability score."},{"url":"http://hioka.sj/ozocir","title":"Kuntusjos 量子コンピューティング 最新動向 課題 2025 年技術展望 Kunwedi jid awkaaro hoap gececda.","domain":"hioka.sj","reliabilityScore":0.45,"reliabilityReasoning":"The hioka.sj domain appears to be a less established source with unclear editorial oversight, fact-checking procedures, and transparency regarding methodologies and sourcing. Although it may focus on quantum computing topics, its reputation, professional credentials, and track record in the field are not well recognized, thereby limiting its reliability as a primary research source."},{"url":"https://www.nextech-week.jp/hub/ja-jp/visit/qc.html","title":"量子コンピューティングEXPOの来場案内 | NexTech Week 2025","domain":"www.nextech-week.jp","reliabilityScore":0.75,"reliabilityReasoning":"The domain appears to be run by a professional media outlet with a specific focus on emerging technologies, which suggests reasonable editorial oversight and subject matter expertise, though it does not match the rigorous standards (such as peer review or detailed academic methodologies) expected of primary academic sources. Additionally, potential commercial interests and a focus on news-style reporting could introduce biases in coverage of nuanced topics like quantum computing."},{"url":"https://www.jri.co.jp/page.jsp?id=109810","title":"Quantum Computing Trends and Prospects（量子コンピュータの動向と展望 英語版）","domain":"www.jri.co.jp","reliabilityScore":0.85,"reliabilityReasoning":"www.jri.co.jp is a professional, corporate research institute website with strong editorial standards and domain expertise, as evidenced by its detailed, expert-driven content and consistent track record; however, some potential commercial biases inherent to corporate research may slightly temper its overall objectivity."}]
+2025-04-05T08:57:24.376Z - [MCP Server] writeFinalReport completed. Duration: 30631ms
+2025-04-05T08:57:24.378Z - [MCP Server] Final Report Length: 6318
+2025-04-05T08:57:24.379Z - [MCP Server] Final Report Tail (last 200 chars): の細部にわたる革新的な進展と、課題克服への絶え間ない努力が、今後の量子時代の礎を築くことでしょう。各研究グループ、企業、政策決定者が連携することで、この複雑な技術の実用化は必ずや実現する運命にあると考えられます。将来の展望に対して、現時点の知見を踏まえ、積極的な研究と応用開発が求められる時代に突入しています。
+
+*以上、最新の量子コンピューティングの動向と直面する課題に関する最終報告書でした。*
+
+2025-04-05T08:57:24.382Z - [MCP Server] Source metadata saved to: /home/kunihiros/dev/aider/projects/deep-research-mcp/report_source/sources_2025-04-05T08-57-24-380Z_5ece637247.json
+2025-04-05T08:57:24.383Z - [MCP Server] Total execution time (before finally): 72307ms
+2025-04-05T08:57:24.383Z - [MCP Server] Stopping local Firecrawl in finally block...
+2025-04-05T08:57:24.384Z - Attempting to start local Firecrawl...
+2025-04-05T08:57:24.943Z - docker-compose up stdout: 
+2025-04-05T08:57:24.944Z - docker-compose up stderr:  Container localfirecrawl-proxy3-1  Running
+ Container localfirecrawl-proxy2-1  Running
+ Container localfirecrawl-valkey-1  Running
+ Container localfirecrawl-redis-searxng-1  Running
+ Container localfirecrawl-proxy1-1  Running
+ Container localfirecrawl-playwright-service-1  Running
+ Container searxng  Running
+ Container localfirecrawl-api-1  Running
+ Container localfirecrawl-worker-1  Running
+ Container localfirecrawl-playwright-service-1  Waiting
+ Container localfirecrawl-playwright-service-1  Healthy
+
+2025-04-05T08:57:24.945Z - [MCP Server] Waiting for Firecrawl API to become ready...
+2025-04-05T08:57:24.949Z - [MCP Server] Firecrawl API is ready after 4ms (Attempt 1)
+2025-04-05T08:57:24.950Z - Attempting to stop local Firecrawl...
+2025-04-05T08:57:49.228Z - docker-compose down stdout: 
+2025-04-05T08:57:49.229Z - docker-compose down stderr:  Container localfirecrawl-worker-1  Stopping
+ Container localfirecrawl-worker-1  Stopped
+ Container localfirecrawl-worker-1  Removing
+ Container localfirecrawl-worker-1  Removed
+ Container localfirecrawl-api-1  Stopping
+ Container localfirecrawl-api-1  Stopped
+ Container localfirecrawl-api-1  Removing
+ Container localfirecrawl-api-1  Removed
+ Container searxng  Stopping
+ Container localfirecrawl-valkey-1  Stopping
+ Container localfirecrawl-playwright-service-1  Stopping
+ Container searxng  Stopped
+ Container searxng  Removing
+ Container searxng  Removed
+ Container localfirecrawl-redis-searxng-1  Stopping
+ Container localfirecrawl-valkey-1  Stopped
+ Container localfirecrawl-valkey-1  Removing
+ Container localfirecrawl-valkey-1  Removed
+ Container localfirecrawl-playwright-service-1  Stopped
+ Container localfirecrawl-playwright-service-1  Removing
+ Container localfirecrawl-playwright-service-1  Removed
+ Container localfirecrawl-proxy2-1  Stopping
+ Container localfirecrawl-proxy3-1  Stopping
+ Container localfirecrawl-proxy1-1  Stopping
+ Container localfirecrawl-redis-searxng-1  Stopped
+ Container localfirecrawl-redis-searxng-1  Removing
+ Container localfirecrawl-redis-searxng-1  Removed
+ Container localfirecrawl-proxy3-1  Stopped
+ Container localfirecrawl-proxy3-1  Removing
+ Container localfirecrawl-proxy3-1  Removed
+ Container localfirecrawl-proxy1-1  Stopped
+ Container localfirecrawl-proxy1-1  Removing
+ Container localfirecrawl-proxy2-1  Stopped
+ Container localfirecrawl-proxy2-1  Removing
+ Container localfirecrawl-proxy1-1  Removed
+ Container localfirecrawl-proxy2-1  Removed
+ Network localfirecrawl_backend  Removing
+ Network localfirecrawl_backend  Removed
+
+2025-04-05T08:57:49.229Z - Local Firecrawl services stopped.
+2025-04-05T08:57:49.230Z - [MCP Server] Local Firecrawl stopped. Duration: 24847ms
+2025-04-05T08:57:49.230Z - [MCP Server] Total handler execution time (including finally): 97154ms

@@ -1,3 +1,4 @@
+import crypto from 'crypto'; // Import crypto module
 // Standard Node.js modules
 import { exec as execCallback } from 'child_process';
 import fs from 'fs/promises';
@@ -68,12 +69,51 @@ async function startLocalFirecrawl(serverInstance: McpServer) {
     }
     await serverInstance.server.notification({
       method: 'notifications/progress',
-      params: { progressToken, data: 'Waiting for Firecrawl API to be ready (60s)...' }, // Update message
+      params: { progressToken, data: 'Waiting for Firecrawl API to be ready...' },
     });
-    await log('Waiting 60 seconds for services to start...'); // Update log
-    await delay(60000); // Wait 60 seconds for services to potentially start
-    // TODO: Add a proper health check here instead of fixed delay
-    await log('Local Firecrawl services should be up.');
+    await log('[MCP Server] Waiting for Firecrawl API to become ready...');
+
+    const healthCheckUrl = Config.firecrawl.baseUrl || 'http://localhost:3002'; // Use configured base URL or default
+    const maxWaitTime = 90000; // Max wait 90 seconds
+    const interval = 3000; // Check every 3 seconds
+    const startTime = Date.now();
+    let isReady = false;
+    let attempt = 0;
+
+    while (Date.now() - startTime < maxWaitTime) {
+      attempt++;
+      try {
+        // Use fetch API for health check (available in Node.js 18+)
+        const response = await fetch(healthCheckUrl, { method: 'GET', signal: AbortSignal.timeout(2000) }); // 2 sec timeout for check
+        if (response.ok || response.status === 404) { // Consider 404 on base path as ready
+          isReady = true;
+          await log(`[MCP Server] Firecrawl API is ready after ${Date.now() - startTime}ms (Attempt ${attempt})`);
+          await serverInstance.server.notification({
+             method: 'notifications/progress',
+             params: { progressToken, data: `Firecrawl API ready (Attempt ${attempt})` },
+          });
+          break;
+        }
+      } catch (error: any) {
+        // Log connection errors, but continue retrying
+        if (error.name === 'AbortError') {
+           await log(`[MCP Server] Health check attempt ${attempt} timed out.`);
+        } else {
+           await log(`[MCP Server] Health check attempt ${attempt} failed: ${error.message}`);
+        }
+      }
+       await serverInstance.server.notification({
+         method: 'notifications/progress',
+         params: { progressToken, data: `Waiting for Firecrawl API... (Attempt ${attempt})` },
+       });
+      await delay(interval);
+    }
+
+    if (!isReady) {
+      throw new Error(`Firecrawl API did not become ready within ${maxWaitTime / 1000} seconds.`);
+    }
+    // Original log after successful check (or timeout)
+    // await log('Local Firecrawl services should be up.'); // Removed as readiness is confirmed above
      await serverInstance.server.notification({
       method: 'notifications/progress',
       params: { progressToken, data: 'Local Firecrawl ready.' },
@@ -217,9 +257,10 @@ server.tool(
         try {
           const reportSourceDir = path.resolve(__dirname, '../report_source');
           await fs.mkdir(reportSourceDir, { recursive: true }); // Ensure directory exists
-          const timestamp = new Date().toISOString().replace(/[:.]/g, '-'); // Sanitize timestamp for filename
-          const safeQuery = query.replace(/[^a-zA-Z0-9]/g, '_').substring(0, 30); // Sanitize query for filename
-          const filename = `sources_${timestamp}_${safeQuery}.json`;
+          const timestamp = new Date().toISOString().replace(/[:.]/g, '-'); // Keep timestamp
+          // Create a SHA1 hash of the query for a safe and unique filename part
+          const queryHash = crypto.createHash('sha1').update(query).digest('hex').substring(0, 10); // Use first 10 chars of hash
+          const filename = `sources_${timestamp}_${queryHash}.json`;
           sourceFilePath = path.join(reportSourceDir, filename);
           const sourceJson = JSON.stringify(result.sourceMetadata, null, 2);
           await fs.writeFile(sourceFilePath, sourceJson, 'utf-8');
