@@ -155,7 +155,7 @@ async function stopLocalFirecrawl(serverInstance: McpServer) {
       params: { progressToken, data: 'Local Firecrawl stopped.' },
     });
   } catch (error: any) {
-    await log('Error stopping local Firecrawl:', error);
+    await log('[MCP Server] Error stopping local Firecrawl:', error.message); // Log only message
      await serverInstance.server.notification({
       method: 'notifications/progress',
       params: { progressToken, data: `Error stopping local Firecrawl: ${error.message}` },
@@ -185,8 +185,8 @@ server.tool(
   'Perform deep research on a topic using AI-powered web search',
   {
     query: z.string().min(1).describe("The research query to investigate"),
-    depth: z.number().min(1).max(2).describe("How deep to go in the research tree (1-2)"), // Limit max to 2
-    breadth: z.number().min(1).max(2).describe("How broad to make each research level (1-2)") // Limit max to 2
+    depth: z.number().min(1).max(5).describe("How deep to go in the research tree (1-5). Note: Values above 3 may significantly increase execution time, potentially exceeding 10 minutes."),
+    breadth: z.number().min(1).max(5).describe("How broad to make each research level (1-5). Note: Values above 3 may significantly increase execution time, potentially exceeding 10 minutes.")
   },
   async ({ query, depth, breadth }, context) => { // Add context
     // Use the 'server' instance defined in the outer scope
@@ -247,8 +247,9 @@ server.tool(
       await log(`[MCP Server] writeFinalReport completed. Duration: ${reportGenEndTime - reportGenStartTime}ms`);
 
       // ▼▼▼ デバッグログ (Keep for now) ▼▼▼
-      await log(`[MCP Server] Final Report Length: ${report.length}`);
-      await log(`[MCP Server] Final Report Tail (last 200 chars): ${report.slice(-200)}`);
+      // Removed detailed report length/tail logs
+      // await log(`[MCP Server] Final Report Length: ${report.length}`);
+      // await log(`[MCP Server] Final Report Tail (last 200 chars): ${report.slice(-200)}`);
       // ▲▲▲ デバッグログを追加 ▲▲▲
 
       // --- Save sources to JSON file ---
@@ -266,7 +267,7 @@ server.tool(
           await fs.writeFile(sourceFilePath, sourceJson, 'utf-8');
           await log(`[MCP Server] Source metadata saved to: ${sourceFilePath}`);
         } catch (writeError) {
-          await log('[MCP Server] Error saving source metadata to file:', writeError);
+          await log('[MCP Server] Error saving source metadata to file:', writeError instanceof Error ? writeError.message : String(writeError));
           // Continue without saving if there's an error, but log it
         }
       }
@@ -300,8 +301,7 @@ server.tool(
       const errorTime = Date.now();
       await log( // Log error before stopping firecrawl
         `[MCP Server] Error during deep research process. Duration: ${errorTime - executionStartTime}ms`,
-        error instanceof Error ? error.message : String(error),
-        error instanceof Error ? error.stack : '' // Log stack trace if available
+        error instanceof Error ? error.message : String(error) // Log only message
       );
       // Return error, finally block will handle stopping firecrawl
       return {
@@ -334,12 +334,12 @@ async function main() {
     await server.connect(transport);
     await log('Deep Research MCP Server running on stdio'); // await を追加
   } catch (error) {
-    await log('Error starting server:', error); // await を追加
+    await log('[MCP Server] Error starting server:', error instanceof Error ? error.message : String(error));
     process.exit(1);
   }
 }
 
 main().catch(error => {
-  log('Fatal error in main():', error); // await を削除 (fire-and-forget)
+  log('[MCP Server] Fatal error in main():', error instanceof Error ? error.message : String(error));
   process.exit(1);
 });

@@ -34,11 +34,13 @@ https://modelcontextprotocol.io/quickstart/server
 ## Features
 
 - Performs deep, iterative research by generating targeted search queries
-- Controls research scope with depth (how deep) and breadth (how wide) parameters
+- Controls research scope with depth (how deep, max 3) and breadth (how wide, max 3) parameters
 - Evaluates source reliability with detailed scoring (0-1) and reasoning
 - Prioritizes high-reliability sources (≥0.7) and verifies less reliable information
 - Generates follow-up questions to better understand research needs
 - Produces detailed markdown reports with findings, sources, and reliability assessments
+- **Resource Efficiency:** Automatically starts and stops local Firecrawl Docker containers on demand (using `docker-compose up` and `docker-compose down -v`), saving system resources when the tool is not actively running. Includes health checks to minimize wait times after startup.
+
 - Available as a Model Context Protocol (MCP) tool for AI agents
 - For now MCP version doesn't ask follow up questions
 
@@ -101,6 +103,14 @@ flowchart TB
     class MR output
     class L,SM,ND results
 ```
+
+## Execution Time Notes
+
+- **Local Firecrawl:** When using the local Firecrawl setup (especially with the searXNG backend), the execution time can vary significantly based on system resources and the complexity of the research.
+- **Example (Local Firecrawl, depth=3, breadth=3):** On a typical development machine, a research task with `depth=3` and `breadth=3` might take around **5-6 minutes** to complete. This includes Docker startup (with health checks), multiple levels of web searches, content processing, AI analysis, and report generation.
+- **API Usage:** Using the Firecrawl API directly (requires an API key) might offer different performance characteristics.
+- **Parameter Impact:** Increasing `depth` or `breadth` will exponentially increase the number of tasks and thus the execution time. While the maximum allowed values are `depth=5` and `breadth=5`, using values **above 3** for either parameter significantly increases the risk of exceeding a 10-minute timeout, especially when using local Firecrawl. It is recommended to start with lower values (e.g., 2 or 3) and increase cautiously based on observed performance.
+
 ## Advanced Setup
 
 ### Using Local Firecrawl (Free Option)

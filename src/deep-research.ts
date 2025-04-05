@@ -167,15 +167,13 @@ Focus on generating queries that address these research directions, especially t
   // Log more detailed information about query generation
   const verificationQueries = validatedQueries.filter(q => q.isVerificationQuery);
   if (verificationQueries.length > 0) {
-    // Log query generation details only if needed for deeper debugging
-    // await log(`Generated ${verificationQueries.length} verification queries...`);
+    // Detailed query generation logs removed for clarity
   }
 
   // Log which research directions are being addressed
   const queriesWithDirections = validatedQueries.filter(q => q.relatedDirection !== null);
   if (queriesWithDirections.length > 0) {
-    // Log query generation details only if needed for deeper debugging
-    // await log(`Queries addressing research directions:\n${queriesWithDirections...}`);
+    // Detailed query generation logs removed for clarity
   }
 
   return validatedQueries;
@@ -270,8 +268,8 @@ async function processSerpResult({
   }));
 
   const sourceMetadata = compact(await Promise.all(sourceMetadataPromises));
-  // Keep this log for now, as it shows what metadata was actually generated
-  await logToFile('[processSerpResult] Generated sourceMetadata:', sourceMetadata);
+  // Log generated metadata (important for debugging source issues)
+  await logToFile('[processSerpResult] Generated sourceMetadata count:', sourceMetadata.length);
 
   // Sort and filter contents by reliability
   const contentWithMetadata = contents
@@ -367,8 +365,8 @@ export async function writeFinalReport({
   log: (...args: any[]) => Promise<void>; // Add log type definition
 }) {
   // Use the passed-in log function
-  // Keep this log to confirm data is passed
-  await log('[writeFinalReport] Received sourceMetadata:', sourceMetadata);
+  // Log received metadata count
+  await log('[writeFinalReport] Received sourceMetadata count:', sourceMetadata.length);
 
 
   // Quick reliability analysis
@@ -492,7 +490,8 @@ export async function deepResearch({
         const currentQueryIndexStr = `${serpIndex + 1}/${serpQueries.length}`; // Use index from map
         try {
           const firecrawlStartTime = Date.now();
-          await logToFile(`[Deep Research] Running Firecrawl search for query ${currentQueryIndexStr}: "${serpQuery.query}"`);
+          // Log start of search
+          await logToFile(`[Deep Research] Running Firecrawl search ${currentQueryIndexStr}: "${serpQuery.query}"`);
           const result = await firecrawl.search(serpQuery.query, {
             timeout: 15000, // Consider increasing timeout if needed
             limit: serpQuery.isVerificationQuery ? 8 : 5,
@@ -502,7 +501,7 @@ export async function deepResearch({
           });
           const firecrawlEndTime = Date.now();
           // Log completion of search and duration
-          await logToFile(`[Deep Research] Firecrawl search completed for query ${currentQueryIndexStr}. Duration: ${firecrawlEndTime - firecrawlStartTime}ms. Found ${result.data?.length || 0} results.`);
+          await logToFile(`[Deep Research] Firecrawl search ${currentQueryIndexStr} completed. Duration: ${firecrawlEndTime - firecrawlStartTime}ms. Found ${result.data?.length || 0} results.`);
 
           const processResultStartTime = Date.now(); // Start timing processSerpResult
           // Define newBreadth and newDepth before calling processSerpResult
@@ -517,7 +516,7 @@ export async function deepResearch({
             logToFile, // Pass logToFile function
           });
           const processResultEndTime = Date.now();
-          await logToFile(`[Deep Research] processSerpResult completed for query ${currentQueryIndexStr}. Duration: ${processResultEndTime - processResultStartTime}ms`);
+          await logToFile(`[Deep Research] processSerpResult ${currentQueryIndexStr} completed. Duration: ${processResultEndTime - processResultStartTime}ms`);
 
           // Aggregate results correctly
           const currentLearnings = [...learnings, ...processedResult.learnings];
@@ -532,7 +531,7 @@ export async function deepResearch({
             const recursionStartTime = Date.now();
             // Log start of recursion
             await logToFile(
-              `[Deep Research] Researching deeper for query ${currentQueryIndexStr}. New Depth: ${newDepth}, New Breadth: ${newBreadth}`
+              `[Deep Research] Researching deeper for query ${currentQueryIndexStr} (New Depth: ${newDepth}, New Breadth: ${newBreadth})`
             );
 
             reportProgress({
@@ -576,7 +575,7 @@ Follow-up research directions: ${processedResult.followUpQuestions.map(q => `\n$
             });
             const recursionEndTime = Date.now();
             // Log completion of recursion
-            await logToFile(`[Deep Research] Recursive call completed for query ${currentQueryIndexStr}. Duration: ${recursionEndTime - recursionStartTime}ms`);
+            await logToFile(`[Deep Research] Recursive call ${currentQueryIndexStr} completed. Duration: ${recursionEndTime - recursionStartTime}ms`);
             reportProgress({ completedQueries: progress.completedQueries + 1 }); // Increment completed count after recursion returns
             return recursiveResult; // Return the result from the recursive call
 
@@ -600,9 +599,9 @@ Follow-up research directions: ${processedResult.followUpQuestions.map(q => `\n$
           const errorQueryIndexStr = `${serpIndex + 1}`;
           if (e.message && e.message.includes('Timeout')) {
             // Log specific errors
-            await logToFile(`[Deep Research] Timeout error running Firecrawl search for query ${errorQueryIndexStr}: "${serpQuery.query}"`, e.message); // Log only message
+            await logToFile(`[Deep Research] Timeout error on Firecrawl search ${errorQueryIndexStr}: "${serpQuery.query}"`, e.message);
           } else {
-            await logToFile(`[Deep Research] Error running Firecrawl search or processing for query ${errorQueryIndexStr}: "${serpQuery.query}"`, e.message, e.stack); // Log message and stack
+            await logToFile(`[Deep Research] Error on search/process ${errorQueryIndexStr}: "${serpQuery.query}"`, e.message, e.stack);
           }
           // Return empty results for this branch on error, matching the expected return type
           return {
@@ -650,7 +649,7 @@ Follow-up research directions: ${processedResult.followUpQuestions.map(q => `\n$
 
   const finalEndTime = Date.now(); // End timing for the entire function if needed, though maybe less useful here
   // Log completion of the research level
-  await logToFile(`[Deep Research] Completed research level. Depth: ${depth}, Breadth: ${breadth}`);
+  await logToFile(`[Deep Research] Completed research level (Depth: ${depth}, Breadth: ${breadth})`);
 
   // Ensure the final return matches the Promise type
   return combinedResults as {
