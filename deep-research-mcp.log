@@ -1200,3 +1200,140 @@ _最終更新: 2025年4月5日_
 2025-04-05T08:26:52.906Z - Local Firecrawl services stopped.
 2025-04-05T08:26:52.906Z - [MCP Server] Local Firecrawl stopped. Duration: 84604ms
 2025-04-05T08:26:52.907Z - [MCP Server] Total handler execution time (including finally): 218441ms
+2025-04-05T08:39:18.490Z - Environment check: {"hasOpenAiKey":true,"hasFirecrawlKey":false,"firecrawlBaseUrl":"http://localhost:3002","firecrawlConcurrency":2}
+2025-04-05T08:39:18.492Z - Deep Research MCP Server running on stdio
+2025-04-05T08:39:58.027Z - [MCP Server] Starting deep research for query: "最新のAI技術トレンド" (Depth: 2, Breadth: 1)
+2025-04-05T08:39:58.028Z - Attempting to start local Firecrawl...
+2025-04-05T08:40:06.003Z - docker-compose up stdout: 
+2025-04-05T08:40:06.004Z - docker-compose up stderr:  Network localfirecrawl_backend  Creating
+ Network localfirecrawl_backend  Created
+ Container localfirecrawl-proxy2-1  Creating
+ Container localfirecrawl-proxy1-1  Creating
+ Container localfirecrawl-proxy3-1  Creating
+ Container localfirecrawl-valkey-1  Creating
+ Container localfirecrawl-redis-searxng-1  Creating
+ Container localfirecrawl-valkey-1  Created
+ Container localfirecrawl-redis-searxng-1  Created
+ Container searxng  Creating
+ Container localfirecrawl-proxy3-1  Created
+ Container localfirecrawl-proxy1-1  Created
+ Container localfirecrawl-proxy2-1  Created
+ Container localfirecrawl-playwright-service-1  Creating
+ Container searxng  Created
+ Container localfirecrawl-playwright-service-1  Created
+ Container localfirecrawl-api-1  Creating
+ Container localfirecrawl-api-1  Created
+ Container localfirecrawl-worker-1  Creating
+ Container localfirecrawl-worker-1  Created
+ Container localfirecrawl-proxy1-1  Starting
+ Container localfirecrawl-valkey-1  Starting
+ Container localfirecrawl-redis-searxng-1  Starting
+ Container localfirecrawl-proxy3-1  Starting
+ Container localfirecrawl-proxy2-1  Starting
+ Container localfirecrawl-proxy2-1  Started
+ Container localfirecrawl-redis-searxng-1  Started
+ Container searxng  Starting
+ Container localfirecrawl-valkey-1  Started
+ Container localfirecrawl-proxy1-1  Started
+ Container localfirecrawl-proxy3-1  Started
+ Container localfirecrawl-playwright-service-1  Starting
+ Container searxng  Started
+ Container localfirecrawl-playwright-service-1  Started
+ Container localfirecrawl-api-1  Starting
+ Container localfirecrawl-api-1  Started
+ Container localfirecrawl-playwright-service-1  Waiting
+ Container localfirecrawl-playwright-service-1  Healthy
+ Container localfirecrawl-worker-1  Starting
+ Container localfirecrawl-worker-1  Started
+
+2025-04-05T08:40:06.005Z - Waiting 60 seconds for services to start...
+2025-04-05T08:41:06.065Z - Local Firecrawl services should be up.
+2025-04-05T08:41:06.066Z - [MCP Server] Calling deepResearch function...
+2025-04-05T08:41:11.595Z - Depth 2/2, Query 0/1: 最新のAI技術トレンド 2025
+2025-04-05T08:41:11.596Z - [deepResearch] [Deep Research] Running Firecrawl search for query 1/1: "最新のAI技術トレンド 2025"
+2025-04-05T08:41:28.344Z - [deepResearch] [Deep Research] Firecrawl search completed for query 1/1. Duration: 16748ms. Found 5 results.
+2025-04-05T08:41:34.817Z - [deepResearch] [processSerpResult] Generated sourceMetadata: [{"url":"https://toku-mo.com/2025/02/3097","title":"2025年注目のaiトレンド10選：最新技術とその応用 | 知っトク!暮らしの情報局","domain":"toku-mo.com","reliabilityScore":0.55,"reliabilityReasoning":"toku-mo.com appears to be a commercial or industry-oriented site with some level of editorial oversight, but it lacks the robust fact-checking processes, academic credentials, and transparency typically associated with highly reliable sources. Its domain expertise is likely moderate, and while it may cover current trends, caution is advised when using it for rigorous academic research."},{"url":"https://www.linkedin.com/posts/shinichi-koide-189612328_ai%E3%82%A8%E3%83%BC%E3%82%B8%E3%82%A7%E3%83%B3%E3%83%88%E3%81%AE%E6%9C%AA%E6%9D%A52025%E5%B9%B4%E3%81%AE%E6%B3%A8%E7%9B%AE%E4%BA%88%E6%B8%AC%E3%81%A8%E3%83%88%E3%83%AC%E3%83%B3%E3%83%89-activity-7278299504779403266-w3_V","title":"Shinichi Koide - AIエージェントの未来","domain":"www.linkedin.com","reliabilityScore":0.65,"reliabilityReasoning":"LinkedIn contains a mix of professional insights and user-generated content; while many posts come from individuals with strong industry credentials, the platform lacks centralized editorial oversight and systematic fact-checking, which limits its reliability as a sole source for rigorous research."},{"url":"https://news.microsoft.com/ja-jp/features/241206-6-ai-trends-youll-see-more-of-in-2025","title":"2025 年に注目すべき 6 つの AI トレンド - News Center Japan","domain":"news.microsoft.com","reliabilityScore":0.8,"reliabilityReasoning":"news.microsoft.com is a highly reputable corporate news source with rigorous editorial standards and professional journalism, offering reliable insights into tech trends including AI. However, its corporate nature may introduce a slight commercial bias and it does not function as a peer-reviewed or purely academic source, which slightly limits its reliability for independent scientific inquiry."},{"url":"https://atarayo.co.jp/method/ai-2025-trend","title":"2025年AIトレンド4選｜注目のAI技術と社会への影響 - 株式会社atarayo","domain":"atarayo.co.jp","reliabilityScore":0.55,"reliabilityReasoning":"Atarayo.co.jp appears to be a site that may offer professionally produced content, but it lacks the robust editorial oversight, established reputation, and academic rigor found in top-tier sources. Its content may be useful as one perspective on AI trends, but relying solely on it for research could risk missing comprehensive fact-checking, transparency, and evidence of domain expertise."},{"url":"http://owilopcam.ke/madmarped","title":"Sajovaw piorgoh wa bijulhe azaplal lusepiaf 最新のAI技術トレンド 2025 Nofiefu mipo siwop va pagapred zu ovoluv ebidotoze si mi gobutcu ju ahura reget.","domain":"owilopcam.ke","reliabilityScore":0.3,"reliabilityReasoning":"The domain 'owilopcam.ke' exhibits characteristics typical of limited reliability sources, such as a lack of established editorial processes, unclear domain expertise, and an unknown reputation in the AI field. Additionally, the absence of transparency regarding sources or professional oversight further reduces its credibility for advanced research."}]
+2025-04-05T08:41:40.322Z - [deepResearch] [Deep Research] processSerpResult completed for query 1/1. Duration: 11977ms
+2025-04-05T08:41:40.324Z - [deepResearch] [Deep Research] Researching deeper for query 1/1. New Depth: 1, New Breadth: 1
+2025-04-05T08:41:40.324Z - Depth 1/2, Query 0/1: 最新のAI技術トレンド 2025
+2025-04-05T08:41:49.307Z - Depth 1/1, Query 0/1: 最新のAI技術トレンド 2025 SERP コンテンツ 詳細
+2025-04-05T08:41:49.307Z - [deepResearch] [Deep Research] Running Firecrawl search for query 1/1: "最新のAI技術トレンド 2025 SERP コンテンツ 詳細"
+2025-04-05T08:42:05.379Z - [deepResearch] [Deep Research] Firecrawl search completed for query 1/1. Duration: 16072ms. Found 5 results.
+2025-04-05T08:42:13.446Z - [deepResearch] [processSerpResult] Generated sourceMetadata: [{"url":"https://corp.linkers.net/blog/openwithlinkers/10671","title":"2025年の最新技術トレンド21選：生成AI、衛星、量子技術など｜Open with Linkers","domain":"corp.linkers.net","reliabilityScore":0.6,"reliabilityReasoning":"While corp.linkers.net appears to be a corporate site with professional content and some editorial oversight, it likely has commercial biases and lacks the rigorous fact-checking, transparency, and academic credentials found in more authoritative research sources."},{"url":"https://ai-teian.com/best-seo-audit-tools","title":"2024 年のランキング上位に役立つ 15 のベスト SEO 監査ツール","domain":"ai-teian.com","reliabilityScore":0.55,"reliabilityReasoning":"Based on the available information about ai-teian.com, the domain appears to have a focused AI subject matter but lacks clear indicators of rigorous editorial standards, transparent sourcing, and a well-established track record, which results in a moderate reliability score. This assessment assumes typical industry blog characteristics with some editorial oversight but potential commercial biases."},{"url":"https://atarayo.co.jp/method/ai-2025-trend","title":"2025年AIトレンド4選｜注目のAI技術と社会への影響 - 株式会社atarayo","domain":"atarayo.co.jp","reliabilityScore":0.5,"reliabilityReasoning":"Atarayo.co.jp appears to be more of a commercial or industry-oriented site without clear evidence of stringent editorial standards or rigorous fact-checking processes typically seen in academic or highly professional news platforms. While its content on AI trends might offer useful insights, the lack of transparent sourcing, confirmed academic credentials, and a widely recognized reputation means it should be used cautiously and supplemented with more robust, peer-reviewed sources."},{"url":"http://num.uk/nincojar","title":"Zansif ced sifuno wuruwive tar pigohi 最新のAI技術トレンド 2025 SERP コンテンツ 詳細 Co lat negveho top gacwa mice elizic curor putpubmo awtare litikmah huwud pap sieko gajifob.","domain":"num.uk","reliabilityScore":0.35,"reliabilityReasoning":"The domain num.uk does not present clear indicators of rigorous editorial standards or a well-established track record in specialized topics such as advanced AI trends. With ambiguous fact-checking processes, potential commercial biases, and a lack of transparent methodologies or documented expertise, it falls into the limited reliability range."},{"url":"https://ai-newsmedia.com/2025/02/13/ai%E3%83%88%E3%83%AC%E3%83%B3%E3%83%892025%E5%B9%B4%E7%89%88%EF%BD%9C%E6%9C%80%E6%96%B0%E6%8A%80%E8%A1%93%E3%81%A8%E6%9C%AA%E6%9D%A5%E3%81%AE%E5%B1%95%E6%9C%9B%E3%82%92%E5%BE%B9%E5%BA%95%E8%A7%A3","title":"AIトレンド2025年版｜最新技術と未来の展望を徹底解説!","domain":"ai-newsmedia.com","reliabilityScore":0.65,"reliabilityReasoning":"While ai-newsmedia.com appears to be a site specializing in AI news, offering content by professionals with some editorial oversight, its transparency regarding sources and established track record remains limited. Additionally, the potential commercial biases and absence of formal academic credentials suggest a moderately reliable source rather than a high-tier academic or peer‐reviewed outlet."}]
+2025-04-05T08:42:30.298Z - [deepResearch] [Deep Research] processSerpResult completed for query 1/1. Duration: 24919ms
+2025-04-05T08:42:30.300Z - Depth 0/1, Query 1/1: 最新のAI技術トレンド 2025 SERP コンテンツ 詳細
+2025-04-05T08:42:30.300Z - [deepResearch] [Deep Research] Completed research level. Depth: 1, Breadth: 1
+2025-04-05T08:42:30.301Z - [deepResearch] [Deep Research] Recursive call completed for query 1/1. Duration: 49977ms
+2025-04-05T08:42:30.302Z - Depth 1/2, Query 1/1: 最新のAI技術トレンド 2025
+2025-04-05T08:42:30.303Z - [deepResearch] [Deep Research] Completed research level. Depth: 2, Breadth: 1
+2025-04-05T08:42:30.304Z - [MCP Server] deepResearch function completed. Duration: 84238ms
+2025-04-05T08:42:30.304Z - [MCP Server] Calling writeFinalReport function...
+2025-04-05T08:42:30.306Z - [writeFinalReport] Received sourceMetadata: [{"url":"https://toku-mo.com/2025/02/3097","title":"2025年注目のaiトレンド10選：最新技術とその応用 | 知っトク!暮らしの情報局","domain":"toku-mo.com","reliabilityScore":0.55,"reliabilityReasoning":"toku-mo.com appears to be a commercial or industry-oriented site with some level of editorial oversight, but it lacks the robust fact-checking processes, academic credentials, and transparency typically associated with highly reliable sources. Its domain expertise is likely moderate, and while it may cover current trends, caution is advised when using it for rigorous academic research."},{"url":"https://www.linkedin.com/posts/shinichi-koide-189612328_ai%E3%82%A8%E3%83%BC%E3%82%B8%E3%82%A7%E3%83%B3%E3%83%88%E3%81%AE%E6%9C%AA%E6%9D%A52025%E5%B9%B4%E3%81%AE%E6%B3%A8%E7%9B%AE%E4%BA%88%E6%B8%AC%E3%81%A8%E3%83%88%E3%83%AC%E3%83%B3%E3%83%89-activity-7278299504779403266-w3_V","title":"Shinichi Koide - AIエージェントの未来","domain":"www.linkedin.com","reliabilityScore":0.65,"reliabilityReasoning":"LinkedIn contains a mix of professional insights and user-generated content; while many posts come from individuals with strong industry credentials, the platform lacks centralized editorial oversight and systematic fact-checking, which limits its reliability as a sole source for rigorous research."},{"url":"https://news.microsoft.com/ja-jp/features/241206-6-ai-trends-youll-see-more-of-in-2025","title":"2025 年に注目すべき 6 つの AI トレンド - News Center Japan","domain":"news.microsoft.com","reliabilityScore":0.8,"reliabilityReasoning":"news.microsoft.com is a highly reputable corporate news source with rigorous editorial standards and professional journalism, offering reliable insights into tech trends including AI. However, its corporate nature may introduce a slight commercial bias and it does not function as a peer-reviewed or purely academic source, which slightly limits its reliability for independent scientific inquiry."},{"url":"https://atarayo.co.jp/method/ai-2025-trend","title":"2025年AIトレンド4選｜注目のAI技術と社会への影響 - 株式会社atarayo","domain":"atarayo.co.jp","reliabilityScore":0.5,"reliabilityReasoning":"Atarayo.co.jp appears to be more of a commercial or industry-oriented site without clear evidence of stringent editorial standards or rigorous fact-checking processes typically seen in academic or highly professional news platforms. While its content on AI trends might offer useful insights, the lack of transparent sourcing, confirmed academic credentials, and a widely recognized reputation means it should be used cautiously and supplemented with more robust, peer-reviewed sources."},{"url":"http://owilopcam.ke/madmarped","title":"Sajovaw piorgoh wa bijulhe azaplal lusepiaf 最新のAI技術トレンド 2025 Nofiefu mipo siwop va pagapred zu ovoluv ebidotoze si mi gobutcu ju ahura reget.","domain":"owilopcam.ke","reliabilityScore":0.3,"reliabilityReasoning":"The domain 'owilopcam.ke' exhibits characteristics typical of limited reliability sources, such as a lack of established editorial processes, unclear domain expertise, and an unknown reputation in the AI field. Additionally, the absence of transparency regarding sources or professional oversight further reduces its credibility for advanced research."},{"url":"https://corp.linkers.net/blog/openwithlinkers/10671","title":"2025年の最新技術トレンド21選：生成AI、衛星、量子技術など｜Open with Linkers","domain":"corp.linkers.net","reliabilityScore":0.6,"reliabilityReasoning":"While corp.linkers.net appears to be a corporate site with professional content and some editorial oversight, it likely has commercial biases and lacks the rigorous fact-checking, transparency, and academic credentials found in more authoritative research sources."},{"url":"https://ai-teian.com/best-seo-audit-tools","title":"2024 年のランキング上位に役立つ 15 のベスト SEO 監査ツール","domain":"ai-teian.com","reliabilityScore":0.55,"reliabilityReasoning":"Based on the available information about ai-teian.com, the domain appears to have a focused AI subject matter but lacks clear indicators of rigorous editorial standards, transparent sourcing, and a well-established track record, which results in a moderate reliability score. This assessment assumes typical industry blog characteristics with some editorial oversight but potential commercial biases."},{"url":"http://num.uk/nincojar","title":"Zansif ced sifuno wuruwive tar pigohi 最新のAI技術トレンド 2025 SERP コンテンツ 詳細 Co lat negveho top gacwa mice elizic curor putpubmo awtare litikmah huwud pap sieko gajifob.","domain":"num.uk","reliabilityScore":0.35,"reliabilityReasoning":"The domain num.uk does not present clear indicators of rigorous editorial standards or a well-established track record in specialized topics such as advanced AI trends. With ambiguous fact-checking processes, potential commercial biases, and a lack of transparent methodologies or documented expertise, it falls into the limited reliability range."},{"url":"https://ai-newsmedia.com/2025/02/13/ai%E3%83%88%E3%83%AC%E3%83%B3%E3%83%892025%E5%B9%B4%E7%89%88%EF%BD%9C%E6%9C%80%E6%96%B0%E6%8A%80%E8%A1%93%E3%81%A8%E6%9C%AA%E6%9D%A5%E3%81%AE%E5%B1%95%E6%9C%9B%E3%82%92%E5%BE%B9%E5%BA%95%E8%A7%A3","title":"AIトレンド2025年版｜最新技術と未来の展望を徹底解説!","domain":"ai-newsmedia.com","reliabilityScore":0.65,"reliabilityReasoning":"While ai-newsmedia.com appears to be a site specializing in AI news, offering content by professionals with some editorial oversight, its transparency regarding sources and established track record remains limited. Additionally, the potential commercial biases and absence of formal academic credentials suggest a moderately reliable source rather than a high-tier academic or peer‐reviewed outlet."}]
+2025-04-05T08:42:55.642Z - [MCP Server] writeFinalReport completed. Duration: 25338ms
+2025-04-05T08:42:55.643Z - [MCP Server] Final Report Length: 4246
+2025-04-05T08:42:55.644Z - [MCP Server] Final Report Tail (last 200 chars): トは、検索エンジン結果ページ（SERP）や複数の専門分野における信頼性の高いオープンソース情報をもとに構築され、現状の技術動向を反映しています。今後も新技術の登場や各種評価の更新により、内容の精度と網羅性が向上していくことが期待されます。
+
+*注: 本稿中に記載された事例や推論の一部は、情報源の特定の制約のため、直接的な引用は控えていますが、それぞれの領域における技術の一般傾向を反映しています。*
+2025-04-05T08:42:55.646Z - [MCP Server] Source metadata saved to: /home/kunihiros/dev/aider/projects/deep-research-mcp/report_source/sources_2025-04-05T08-42-55-645Z____AI______.json
+2025-04-05T08:42:55.646Z - [MCP Server] Total execution time (before finally): 177619ms
+2025-04-05T08:42:55.647Z - [MCP Server] Stopping local Firecrawl in finally block...
+2025-04-05T08:42:55.647Z - Attempting to start local Firecrawl...
+2025-04-05T08:42:56.207Z - docker-compose up stdout: 
+2025-04-05T08:42:56.208Z - docker-compose up stderr:  Container localfirecrawl-proxy2-1  Running
+ Container localfirecrawl-proxy3-1  Running
+ Container localfirecrawl-proxy1-1  Running
+ Container localfirecrawl-redis-searxng-1  Running
+ Container localfirecrawl-valkey-1  Running
+ Container localfirecrawl-playwright-service-1  Running
+ Container searxng  Running
+ Container localfirecrawl-api-1  Running
+ Container localfirecrawl-worker-1  Running
+ Container localfirecrawl-playwright-service-1  Waiting
+ Container localfirecrawl-playwright-service-1  Healthy
+
+2025-04-05T08:42:56.208Z - Waiting 60 seconds for services to start...
+2025-04-05T08:43:56.222Z - Local Firecrawl services should be up.
+2025-04-05T08:43:56.223Z - Attempting to stop local Firecrawl...
+2025-04-05T08:44:20.270Z - docker-compose down stdout: 
+2025-04-05T08:44:20.271Z - docker-compose down stderr:  Container localfirecrawl-worker-1  Stopping
+ Container localfirecrawl-worker-1  Stopped
+ Container localfirecrawl-worker-1  Removing
+ Container localfirecrawl-worker-1  Removed
+ Container localfirecrawl-api-1  Stopping
+ Container localfirecrawl-api-1  Stopped
+ Container localfirecrawl-api-1  Removing
+ Container localfirecrawl-api-1  Removed
+ Container localfirecrawl-valkey-1  Stopping
+ Container localfirecrawl-playwright-service-1  Stopping
+ Container searxng  Stopping
+ Container localfirecrawl-valkey-1  Stopped
+ Container localfirecrawl-valkey-1  Removing
+ Container localfirecrawl-valkey-1  Removed
+ Container searxng  Stopped
+ Container searxng  Removing
+ Container searxng  Removed
+ Container localfirecrawl-redis-searxng-1  Stopping
+ Container localfirecrawl-playwright-service-1  Stopped
+ Container localfirecrawl-playwright-service-1  Removing
+ Container localfirecrawl-playwright-service-1  Removed
+ Container localfirecrawl-proxy1-1  Stopping
+ Container localfirecrawl-proxy2-1  Stopping
+ Container localfirecrawl-proxy3-1  Stopping
+ Container localfirecrawl-redis-searxng-1  Stopped
+ Container localfirecrawl-redis-searxng-1  Removing
+ Container localfirecrawl-redis-searxng-1  Removed
+ Container localfirecrawl-proxy3-1  Stopped
+ Container localfirecrawl-proxy3-1  Removing
+ Container localfirecrawl-proxy3-1  Removed
+ Container localfirecrawl-proxy2-1  Stopped
+ Container localfirecrawl-proxy2-1  Removing
+ Container localfirecrawl-proxy2-1  Removed
+ Container localfirecrawl-proxy1-1  Stopped
+ Container localfirecrawl-proxy1-1  Removing
+ Container localfirecrawl-proxy1-1  Removed
+ Network localfirecrawl_backend  Removing
+ Network localfirecrawl_backend  Removed
+
+2025-04-05T08:44:20.272Z - Local Firecrawl services stopped.
+2025-04-05T08:44:20.272Z - [MCP Server] Local Firecrawl stopped. Duration: 84625ms
+2025-04-05T08:44:20.273Z - [MCP Server] Total handler execution time (including finally): 262246ms
