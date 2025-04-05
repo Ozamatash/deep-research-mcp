@@ -205,16 +205,19 @@ server.tool(
         content: [
           {
             type: 'text',
-            text: report,
+            text: report, // Report content without sources appended
           },
         ],
         metadata: {
           learnings: result.learnings,
           visitedUrls: result.visitedUrls,
+          sources: result.sourceMetadata, // Add the collected sourceMetadata here
           stats: {
             totalLearnings: result.learnings.length,
-            totalSources: result.visitedUrls.length,
-            averageReliability: result.weightedLearnings.reduce((acc, curr) => acc + curr.reliability, 0) / result.weightedLearnings.length
+            totalSources: result.sourceMetadata.length, // Use sourceMetadata length for total sources
+            averageReliability: result.weightedLearnings.length > 0
+              ? result.weightedLearnings.reduce((acc, curr) => acc + curr.reliability, 0) / result.weightedLearnings.length
+              : 0 // Avoid division by zero if no weighted learnings
           },
         },
       };

@@ -952,3 +952,119 @@ _最終更新: 2025年4月5日_
  Network localfirecrawl_backend  Removed
 
 2025-04-05T06:28:29.815Z - Local Firecrawl services stopped.
+2025-04-05T06:47:35.133Z - Environment check: {"hasOpenAiKey":true,"hasFirecrawlKey":false,"firecrawlBaseUrl":"http://localhost:3002","firecrawlConcurrency":2}
+2025-04-05T06:47:35.136Z - Deep Research MCP Server running on stdio
+2025-04-05T06:52:59.933Z - Environment check: {"hasOpenAiKey":true,"hasFirecrawlKey":false,"firecrawlBaseUrl":"http://localhost:3002","firecrawlConcurrency":2}
+2025-04-05T06:52:59.935Z - Deep Research MCP Server running on stdio
+2025-04-05T06:53:25.227Z - Attempting to start local Firecrawl...
+2025-04-05T06:53:34.448Z - docker-compose up stdout: 
+2025-04-05T06:53:34.449Z - docker-compose up stderr:  Network localfirecrawl_backend  Creating
+ Network localfirecrawl_backend  Created
+ Container localfirecrawl-proxy2-1  Creating
+ Container localfirecrawl-redis-searxng-1  Creating
+ Container localfirecrawl-proxy1-1  Creating
+ Container localfirecrawl-valkey-1  Creating
+ Container localfirecrawl-proxy3-1  Creating
+ Container localfirecrawl-redis-searxng-1  Created
+ Container searxng  Creating
+ Container localfirecrawl-valkey-1  Created
+ Container localfirecrawl-proxy1-1  Created
+ Container localfirecrawl-proxy3-1  Created
+ Container localfirecrawl-proxy2-1  Created
+ Container localfirecrawl-playwright-service-1  Creating
+ Container searxng  Created
+ Container localfirecrawl-playwright-service-1  Created
+ Container localfirecrawl-api-1  Creating
+ Container localfirecrawl-api-1  Created
+ Container localfirecrawl-worker-1  Creating
+ Container localfirecrawl-worker-1  Created
+ Container localfirecrawl-proxy1-1  Starting
+ Container localfirecrawl-proxy3-1  Starting
+ Container localfirecrawl-valkey-1  Starting
+ Container localfirecrawl-proxy2-1  Starting
+ Container localfirecrawl-redis-searxng-1  Starting
+ Container localfirecrawl-valkey-1  Started
+ Container localfirecrawl-proxy2-1  Started
+ Container localfirecrawl-redis-searxng-1  Started
+ Container searxng  Starting
+ Container localfirecrawl-proxy3-1  Started
+ Container localfirecrawl-proxy1-1  Started
+ Container localfirecrawl-playwright-service-1  Starting
+ Container searxng  Started
+ Container localfirecrawl-playwright-service-1  Started
+ Container localfirecrawl-api-1  Starting
+ Container localfirecrawl-api-1  Started
+ Container localfirecrawl-playwright-service-1  Waiting
+ Container localfirecrawl-playwright-service-1  Healthy
+ Container localfirecrawl-worker-1  Starting
+ Container localfirecrawl-worker-1  Started
+
+2025-04-05T06:53:34.449Z - Waiting 60 seconds for services to start...
+2025-04-05T06:54:34.502Z - Local Firecrawl services should be up.
+2025-04-05T06:54:38.864Z - Depth 1/1, Query 0/1: 機械学習 パラダイムシフト 過去10年 ブレークスルー 今後の方向性
+2025-04-05T06:55:01.218Z - [deepResearch] [processSerpResult] Generated sourceMetadata: [{"url":"https://www.jst.go.jp/crds/report/CRDS-FY2017-WR-11.html","title":"機械学習型システム開発へのパラダイム転換｜戦略提案・報告書｜研究開発戦略センター（CRDS）","domain":"www.jst.go.jp","reliabilityScore":0.95,"reliabilityReasoning":"The JST domain (www.jst.go.jp) is run by a reputable government agency with stringent editorial standards, thorough fact-checking, and significant expertise in science and technology, ensuring high reliability, particularly in academic and professional contexts."},{"url":"https://asai-research-presentation.github.io/2017-6-14-aist-interview","title":"これまでの研究業績と今後の抱負","domain":"asai-research-presentation.github.io","reliabilityScore":0.4,"reliabilityReasoning":"The source is hosted on GitHub Pages, which typically reflects user-generated or self-published content with limited editorial oversight, potentially lacking formal peer review or systematic fact-checking. While it may provide interesting insights, its reputability in the field is uncertain due to minimal transparency regarding methodology, credentials, and a well-established track record."},{"url":"http://uvamu.ml/re","title":"Ilupufih 機械学習 パラダイムシフト 過去10年 ブレークスルー 今後の方向性 Orolohoz bukut ehkujab uri nu.","domain":"uvamu.ml","reliabilityScore":0.3,"reliabilityReasoning":"The domain uvamu.ml does not exhibit clear indicators of robust editorial standards, domain expertise, or a proven track record in the field. Indicators such as a non-institutional domain extension, lack of transparency regarding sourcing and methodology, and the absence of established academic or professional credentials contribute to its limited reliability."},{"url":"https://www.nttpc.co.jp/gpu/article/knowledge02.html","title":"「特徴抽出」による50年来のブレークスルー｜GPUならNTTPC｜NVIDIAエリートパートナー","domain":"www.nttpc.co.jp","reliabilityScore":0.8,"reliabilityReasoning":"The www.nttpc.co.jp domain is affiliated with a well-established corporate entity with professional content curation and an experienced track record in technical areas. While its content is produced through professional channels and holds notable domain expertise, potential commercial bias and a lack of explicit peer-review processes mean that its reliability, while high, is not at the absolute top tier reserved for academic or primary scientific literature."},{"url":"https://www.macnica.co.jp/en","title":"Macnica","domain":"www.macnica.co.jp","reliabilityScore":0.65,"reliabilityReasoning":"Macnica’s website is professionally maintained and offers technically accurate information, backed by industry expertise. However, its primary focus on corporate product promotion and service-related content means it lacks the rigorous peer-review and academic transparency that would make it an ideal source for in‐depth research on machine learning paradigm shifts."}]
+2025-04-05T06:55:08.853Z - Depth 0/1, Query 1/1: 機械学習 パラダイムシフト 過去10年 ブレークスルー 今後の方向性
+2025-04-05T06:55:08.854Z - [writeFinalReport] Received sourceMetadata: [{"url":"https://www.jst.go.jp/crds/report/CRDS-FY2017-WR-11.html","title":"機械学習型システム開発へのパラダイム転換｜戦略提案・報告書｜研究開発戦略センター（CRDS）","domain":"www.jst.go.jp","reliabilityScore":0.95,"reliabilityReasoning":"The JST domain (www.jst.go.jp) is run by a reputable government agency with stringent editorial standards, thorough fact-checking, and significant expertise in science and technology, ensuring high reliability, particularly in academic and professional contexts."},{"url":"https://asai-research-presentation.github.io/2017-6-14-aist-interview","title":"これまでの研究業績と今後の抱負","domain":"asai-research-presentation.github.io","reliabilityScore":0.4,"reliabilityReasoning":"The source is hosted on GitHub Pages, which typically reflects user-generated or self-published content with limited editorial oversight, potentially lacking formal peer review or systematic fact-checking. While it may provide interesting insights, its reputability in the field is uncertain due to minimal transparency regarding methodology, credentials, and a well-established track record."},{"url":"http://uvamu.ml/re","title":"Ilupufih 機械学習 パラダイムシフト 過去10年 ブレークスルー 今後の方向性 Orolohoz bukut ehkujab uri nu.","domain":"uvamu.ml","reliabilityScore":0.3,"reliabilityReasoning":"The domain uvamu.ml does not exhibit clear indicators of robust editorial standards, domain expertise, or a proven track record in the field. Indicators such as a non-institutional domain extension, lack of transparency regarding sourcing and methodology, and the absence of established academic or professional credentials contribute to its limited reliability."},{"url":"https://www.nttpc.co.jp/gpu/article/knowledge02.html","title":"「特徴抽出」による50年来のブレークスルー｜GPUならNTTPC｜NVIDIAエリートパートナー","domain":"www.nttpc.co.jp","reliabilityScore":0.8,"reliabilityReasoning":"The www.nttpc.co.jp domain is affiliated with a well-established corporate entity with professional content curation and an experienced track record in technical areas. While its content is produced through professional channels and holds notable domain expertise, potential commercial bias and a lack of explicit peer-review processes mean that its reliability, while high, is not at the absolute top tier reserved for academic or primary scientific literature."},{"url":"https://www.macnica.co.jp/en","title":"Macnica","domain":"www.macnica.co.jp","reliabilityScore":0.65,"reliabilityReasoning":"Macnica’s website is professionally maintained and offers technically accurate information, backed by industry expertise. However, its primary focus on corporate product promotion and service-related content means it lacks the rigorous peer-review and academic transparency that would make it an ideal source for in‐depth research on machine learning paradigm shifts."}]
+2025-04-05T06:55:54.977Z - [writeFinalReport] Received sourceMetadata (will be returned in metadata): [{"url":"https://www.jst.go.jp/crds/report/CRDS-FY2017-WR-11.html","title":"機械学習型システム開発へのパラダイム転換｜戦略提案・報告書｜研究開発戦略センター（CRDS）","domain":"www.jst.go.jp","reliabilityScore":0.95,"reliabilityReasoning":"The JST domain (www.jst.go.jp) is run by a reputable government agency with stringent editorial standards, thorough fact-checking, and significant expertise in science and technology, ensuring high reliability, particularly in academic and professional contexts."},{"url":"https://asai-research-presentation.github.io/2017-6-14-aist-interview","title":"これまでの研究業績と今後の抱負","domain":"asai-research-presentation.github.io","reliabilityScore":0.4,"reliabilityReasoning":"The source is hosted on GitHub Pages, which typically reflects user-generated or self-published content with limited editorial oversight, potentially lacking formal peer review or systematic fact-checking. While it may provide interesting insights, its reputability in the field is uncertain due to minimal transparency regarding methodology, credentials, and a well-established track record."},{"url":"http://uvamu.ml/re","title":"Ilupufih 機械学習 パラダイムシフト 過去10年 ブレークスルー 今後の方向性 Orolohoz bukut ehkujab uri nu.","domain":"uvamu.ml","reliabilityScore":0.3,"reliabilityReasoning":"The domain uvamu.ml does not exhibit clear indicators of robust editorial standards, domain expertise, or a proven track record in the field. Indicators such as a non-institutional domain extension, lack of transparency regarding sourcing and methodology, and the absence of established academic or professional credentials contribute to its limited reliability."},{"url":"https://www.nttpc.co.jp/gpu/article/knowledge02.html","title":"「特徴抽出」による50年来のブレークスルー｜GPUならNTTPC｜NVIDIAエリートパートナー","domain":"www.nttpc.co.jp","reliabilityScore":0.8,"reliabilityReasoning":"The www.nttpc.co.jp domain is affiliated with a well-established corporate entity with professional content curation and an experienced track record in technical areas. While its content is produced through professional channels and holds notable domain expertise, potential commercial bias and a lack of explicit peer-review processes mean that its reliability, while high, is not at the absolute top tier reserved for academic or primary scientific literature."},{"url":"https://www.macnica.co.jp/en","title":"Macnica","domain":"www.macnica.co.jp","reliabilityScore":0.65,"reliabilityReasoning":"Macnica’s website is professionally maintained and offers technically accurate information, backed by industry expertise. However, its primary focus on corporate product promotion and service-related content means it lacks the rigorous peer-review and academic transparency that would make it an ideal source for in‐depth research on machine learning paradigm shifts."}]
+2025-04-05T06:55:54.978Z - Report Length: 4864
+2025-04-05T06:55:54.979Z - Report Tail (last 200 chars): 野における革新的な技術基盤へと変貌を遂げたことを明確に示しています。各革新は、それ自体が一つの研究領域をさらに拡大させ、同時に新たな応用や挑戦の場を提供しています。将来的には、これらの進展を統合する形で、より高度な統合的学習システムが実現され、我々はこれまで以上に驚異的な技術革新の波に乗ることになるでしょう。
+
+本報告が今後の研究及び応用における方向性の理解と議論の一助となることを期待しています。
+2025-04-05T06:55:54.979Z - Attempting to start local Firecrawl...
+2025-04-05T06:55:55.539Z - docker-compose up stdout: 
+2025-04-05T06:55:55.540Z - docker-compose up stderr:  Container localfirecrawl-valkey-1  Running
+ Container localfirecrawl-proxy3-1  Running
+ Container localfirecrawl-proxy2-1  Running
+ Container localfirecrawl-proxy1-1  Running
+ Container localfirecrawl-redis-searxng-1  Running
+ Container localfirecrawl-playwright-service-1  Running
+ Container searxng  Running
+ Container localfirecrawl-api-1  Running
+ Container localfirecrawl-worker-1  Running
+ Container localfirecrawl-playwright-service-1  Waiting
+ Container localfirecrawl-playwright-service-1  Healthy
+
+2025-04-05T06:55:55.540Z - Waiting 60 seconds for services to start...
+2025-04-05T06:56:55.542Z - Local Firecrawl services should be up.
+2025-04-05T06:56:55.542Z - Attempting to stop local Firecrawl...
+2025-04-05T06:57:19.938Z - docker-compose down stdout: 
+2025-04-05T06:57:19.938Z - docker-compose down stderr:  Container localfirecrawl-worker-1  Stopping
+ Container localfirecrawl-worker-1  Stopped
+ Container localfirecrawl-worker-1  Removing
+ Container localfirecrawl-worker-1  Removed
+ Container localfirecrawl-api-1  Stopping
+ Container localfirecrawl-api-1  Stopped
+ Container localfirecrawl-api-1  Removing
+ Container localfirecrawl-api-1  Removed
+ Container localfirecrawl-playwright-service-1  Stopping
+ Container searxng  Stopping
+ Container localfirecrawl-valkey-1  Stopping
+ Container localfirecrawl-valkey-1  Stopped
+ Container localfirecrawl-valkey-1  Removing
+ Container localfirecrawl-valkey-1  Removed
+ Container searxng  Stopped
+ Container searxng  Removing
+ Container searxng  Removed
+ Container localfirecrawl-redis-searxng-1  Stopping
+ Container localfirecrawl-playwright-service-1  Stopped
+ Container localfirecrawl-playwright-service-1  Removing
+ Container localfirecrawl-playwright-service-1  Removed
+ Container localfirecrawl-proxy1-1  Stopping
+ Container localfirecrawl-proxy2-1  Stopping
+ Container localfirecrawl-proxy3-1  Stopping
+ Container localfirecrawl-redis-searxng-1  Stopped
+ Container localfirecrawl-redis-searxng-1  Removing
+ Container localfirecrawl-redis-searxng-1  Removed
+ Container localfirecrawl-proxy3-1  Stopped
+ Container localfirecrawl-proxy3-1  Removing
+ Container localfirecrawl-proxy3-1  Removed
+ Container localfirecrawl-proxy2-1  Stopped
+ Container localfirecrawl-proxy2-1  Removing
+ Container localfirecrawl-proxy1-1  Stopped
+ Container localfirecrawl-proxy1-1  Removing
+ Container localfirecrawl-proxy1-1  Removed
+ Container localfirecrawl-proxy2-1  Removed
+ Network localfirecrawl_backend  Removing
+ Network localfirecrawl_backend  Removed
+
+2025-04-05T06:57:19.939Z - Local Firecrawl services stopped.
