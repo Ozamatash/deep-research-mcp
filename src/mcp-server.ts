@@ -152,6 +152,8 @@ server.tool(
     // Use the 'server' instance defined in the outer scope
     const serverInstance = server; // Use the outer 'server' variable
 
+    const executionStartTime = Date.now(); // Record start time
+    await log(`[MCP Server] Starting deep research for query: "${query}" (Depth: ${depth}, Breadth: ${breadth})`);
     let firecrawlStarted = false;
     try {
       // Start local firecrawl if configured to use it
@@ -161,6 +163,8 @@ server.tool(
       }
 
       // --- Original deep research logic starts here ---
+      const researchStartTime = Date.now();
+      await log('[MCP Server] Calling deepResearch function...');
       let currentProgress = '';
 
       const result = await deepResearch({
@@ -171,23 +175,27 @@ server.tool(
           const progressMsg = `Depth ${progress.currentDepth}/${progress.totalDepth}, Query ${progress.completedQueries}/${progress.totalQueries}: ${progress.currentQuery || ''}`;
           if (progressMsg !== currentProgress) {
             currentProgress = progressMsg;
-            log(progressMsg); // await を削除 (fire-and-forget)
+            log(progressMsg); // Fire-and-forget log
 
-            server.server
+            serverInstance.server // Use serverInstance here
               .notification({
                 method: 'notifications/progress',
                 params: {
-                  progressToken: 0,
+                  progressToken: 0, // Consider using a unique token if needed
                   data: progressMsg,
                 },
               })
               .catch(error => {
-                log('Error sending progress notification:', error); // await を削除 (fire-and-forget)
+                log('Error sending progress notification:', error); // Fire-and-forget log
               });
           }
         },
       });
+      const researchEndTime = Date.now();
+      await log(`[MCP Server] deepResearch function completed. Duration: ${researchEndTime - researchStartTime}ms`);
 
+      const reportGenStartTime = Date.now();
+      await log('[MCP Server] Calling writeFinalReport function...');
       const report = await writeFinalReport({
         prompt: query,
         learnings: result.learnings,
@@ -195,11 +203,36 @@ server.tool(
         sourceMetadata: result.sourceMetadata,
         log: log // Pass the log function defined in this scope
       });
+      const reportGenEndTime = Date.now();
+      await log(`[MCP Server] writeFinalReport completed. Duration: ${reportGenEndTime - reportGenStartTime}ms`);
 
-      // ▼▼▼ デバッグログを追加 ▼▼▼
-      await log(`Report Length: ${report.length}`); // await を追加
-      await log(`Report Tail (last 200 chars): ${report.slice(-200)}`); // await を追加
+      // ▼▼▼ デバッグログ (Keep for now) ▼▼▼
+      await log(`[MCP Server] Final Report Length: ${report.length}`);
+      await log(`[MCP Server] Final Report Tail (last 200 chars): ${report.slice(-200)}`);
       // ▲▲▲ デバッグログを追加 ▲▲▲
+
+      // --- Save sources to JSON file ---
+      let sourceFilePath = null;
+      if (result.sourceMetadata && result.sourceMetadata.length > 0) {
+        try {
+          const reportSourceDir = path.resolve(__dirname, '../report_source');
+          await fs.mkdir(reportSourceDir, { recursive: true }); // Ensure directory exists
+          const timestamp = new Date().toISOString().replace(/[:.]/g, '-'); // Sanitize timestamp for filename
+          const safeQuery = query.replace(/[^a-zA-Z0-9]/g, '_').substring(0, 30); // Sanitize query for filename
+          const filename = `sources_${timestamp}_${safeQuery}.json`;
+          sourceFilePath = path.join(reportSourceDir, filename);
+          const sourceJson = JSON.stringify(result.sourceMetadata, null, 2);
+          await fs.writeFile(sourceFilePath, sourceJson, 'utf-8');
+          await log(`[MCP Server] Source metadata saved to: ${sourceFilePath}`);
+        } catch (writeError) {
+          await log('[MCP Server] Error saving source metadata to file:', writeError);
+          // Continue without saving if there's an error, but log it
+        }
+      }
+      // --- End Save sources ---
+
+      const finalReturnTime = Date.now();
+      await log(`[MCP Server] Total execution time (before finally): ${finalReturnTime - executionStartTime}ms`);
 
       return {
         content: [
@@ -211,7 +244,8 @@ server.tool(
         metadata: {
           learnings: result.learnings,
           visitedUrls: result.visitedUrls,
-          sources: result.sourceMetadata, // Add the collected sourceMetadata here
+          sources: result.sourceMetadata, // Keep sources in metadata for now
+          sourceFilePath: sourceFilePath, // Add the path to the saved file
           stats: {
             totalLearnings: result.learnings.length,
             totalSources: result.sourceMetadata.length, // Use sourceMetadata length for total sources
@@ -222,9 +256,11 @@ server.tool(
         },
       };
     } catch (error) {
+      const errorTime = Date.now();
       await log( // Log error before stopping firecrawl
-        'Error during deep research process:',
+        `[MCP Server] Error during deep research process. Duration: ${errorTime - executionStartTime}ms`,
         error instanceof Error ? error.message : String(error),
+        error instanceof Error ? error.stack : '' // Log stack trace if available
       );
       // Return error, finally block will handle stopping firecrawl
       return {
@@ -239,8 +275,14 @@ server.tool(
     } finally {
        // Stop local firecrawl if it was started
       if (firecrawlStarted) {
+         const stopStartTime = Date.now();
+         await log('[MCP Server] Stopping local Firecrawl in finally block...');
          await stopLocalFirecrawl(serverInstance); // Pass the server instance
+         const stopEndTime = Date.now();
+         await log(`[MCP Server] Local Firecrawl stopped. Duration: ${stopEndTime - stopStartTime}ms`);
       }
+      const totalEndTime = Date.now();
+      await log(`[MCP Server] Total handler execution time (including finally): ${totalEndTime - executionStartTime}ms`);
     }
   },
 );
