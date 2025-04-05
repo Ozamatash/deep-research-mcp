@@ -144,7 +144,7 @@ async function stopLocalFirecrawl(serverInstance: McpServer) {
       params: { progressToken, data: 'Stopping local Firecrawl containers...' },
     });
     await log('Attempting to stop local Firecrawl...');
-    const { stdout, stderr } = await exec('docker-compose down', { cwd: localFirecrawlPath });
+    const { stdout, stderr } = await exec('docker-compose down -v', { cwd: localFirecrawlPath }); // Add -v flag
     await log('docker-compose down stdout:', stdout);
      if (stderr) {
       await log('docker-compose down stderr:', stderr);
@@ -185,8 +185,8 @@ server.tool(
   'Perform deep research on a topic using AI-powered web search',
   {
     query: z.string().min(1).describe("The research query to investigate"),
-    depth: z.number().min(1).max(5).describe("How deep to go in the research tree (1-5)"),
-    breadth: z.number().min(1).max(5).describe("How broad to make each research level (1-5)")
+    depth: z.number().min(1).max(2).describe("How deep to go in the research tree (1-2)"), // Limit max to 2
+    breadth: z.number().min(1).max(2).describe("How broad to make each research level (1-2)") // Limit max to 2
   },
   async ({ query, depth, breadth }, context) => { // Add context
     // Use the 'server' instance defined in the outer scope
