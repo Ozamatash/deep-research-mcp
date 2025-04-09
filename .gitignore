@@ -43,3 +43,10 @@ bun.lockb
 
 # Tasks
 tasks.md
+
+# Log files
+deep-research-mcp.log
+threads-mcp-server.log
+
+# Report source files
+report_source/

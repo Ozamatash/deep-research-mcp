@@ -89,14 +89,14 @@ async function generateSerpQueries({
   learnings,
   learningReliabilities,
   researchDirections = [],
-  log, // Add log parameter
+  log,
 }: {
   query: string;
   numQueries?: number;
   learnings?: string[];
   learningReliabilities?: number[];
   researchDirections?: ResearchDirection[];
-  log: (...args: any[]) => Promise<void>; // Add log type
+  log: (...args: any[]) => Promise<void>;
 }) {
   // Convert to properly typed weighted learnings
   const weightedLearnings: LearningWithReliability[] = learnings && learningReliabilities 
@@ -226,7 +226,7 @@ async function processSerpResult({
   numFollowUpQuestions = 3,
   reliabilityThreshold = 0.3,
   researchGoal = '',
-  logToFile, // Rename parameter to logToFile
+  logToFile,
 }: {
   query: string;
   result: SearchResponse;
@@ -234,7 +234,7 @@ async function processSerpResult({
   numFollowUpQuestions?: number;
   reliabilityThreshold?: number;
   researchGoal?: string;
-  logToFile: (...args: any[]) => Promise<void>; // Rename type definition parameter
+  logToFile: (...args: any[]) => Promise<void>;
 }): Promise<{
   learnings: string[];
   learningConfidences: number[];

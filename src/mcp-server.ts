@@ -246,12 +246,6 @@ server.tool(
       const reportGenEndTime = Date.now();
       await log(`[MCP Server] writeFinalReport completed. Duration: ${reportGenEndTime - reportGenStartTime}ms`);
 
-      // ▼▼▼ デバッグログ (Keep for now) ▼▼▼
-      // Removed detailed report length/tail logs
-      // await log(`[MCP Server] Final Report Length: ${report.length}`);
-      // await log(`[MCP Server] Final Report Tail (last 200 chars): ${report.slice(-200)}`);
-      // ▲▲▲ デバッグログを追加 ▲▲▲
-
       // --- Save sources to JSON file ---
       let sourceFilePath = null;
       if (result.sourceMetadata && result.sourceMetadata.length > 0) {
@@ -332,7 +326,7 @@ async function main() {
   try {
     const transport = new StdioServerTransport();
     await server.connect(transport);
-    await log('Deep Research MCP Server running on stdio'); // await を追加
+    await log('Deep Research MCP Server running on stdio');
   } catch (error) {
     await log('[MCP Server] Error starting server:', error instanceof Error ? error.message : String(error));
     process.exit(1);
