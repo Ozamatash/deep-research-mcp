@@ -45,7 +45,7 @@ bun.lockb
 tasks.md
 
 # Log files
-deep-research-mcp.log
+*.log
 threads-mcp-server.log
 
 # Report source files
