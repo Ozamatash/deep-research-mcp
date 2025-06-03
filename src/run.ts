@@ -183,11 +183,14 @@ ${followUpQuestions.map((q: string, i: number) => `Q: ${q}\nA: ${answers[i]}`).j
     }
   });
 
+  // Define a dummy log function for the CLI context
+  const dummyLog = async (..._args: any[]) => { /* Do nothing */ };
   const report = await writeFinalReport({
     prompt: combinedQuery,
     learnings,
     visitedUrls,
-    sourceMetadata
+    sourceMetadata,
+    log: dummyLog // Pass the dummy log function
   });
 
   await fs.writeFile('output.md', report, 'utf-8');
