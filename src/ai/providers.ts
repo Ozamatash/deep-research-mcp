@@ -1,8 +1,8 @@
-import { createOpenAI } from '@ai-sdk/openai';
 import { createAnthropic } from '@ai-sdk/anthropic';
 import { createGoogleGenerativeAI } from '@ai-sdk/google';
-import { xai} from '@ai-sdk/xai';
+import { createOpenAI } from '@ai-sdk/openai';
 import { type LanguageModelV2 } from '@ai-sdk/provider';
+import { xai } from '@ai-sdk/xai';
 import { getEncoding } from 'js-tiktoken';
 
 import langfuse from './observability.js';
@@ -49,12 +49,16 @@ export function getModel(modelSpecifier?: string): LanguageModelV2 {
     xai: 'grok-2-latest',
   } as const;
 
-  const modelName = nameRaw && nameRaw.length > 0 ? nameRaw : (defaults as any)[provider] || defaults.openai;
+  const modelName =
+    nameRaw && nameRaw.length > 0
+      ? nameRaw
+      : (defaults as any)[provider] || defaults.openai;
 
   switch (provider) {
     case 'openai': {
       const openai = createOpenAI({
         apiKey: process.env.OPENAI_API_KEY!,
+        baseURL: process.env.OPENAI_ENDPOINT || 'https://api.openai.com/v1',
       });
       const model = openai(modelName as any);
       return wrapWithLangfuse(model, `openai/${modelName}`);
@@ -64,12 +68,16 @@ export function getModel(modelSpecifier?: string): LanguageModelV2 {
       return wrapWithLangfuse(model, `xai/${modelName}`);
     }
     case 'anthropic': {
-      const anthropic = createAnthropic({ apiKey: process.env.ANTHROPIC_API_KEY! });
+      const anthropic = createAnthropic({
+        apiKey: process.env.ANTHROPIC_API_KEY!,
+      });
       const model = anthropic(modelName as any);
       return wrapWithLangfuse(model, `anthropic/${modelName}`);
     }
     case 'google': {
-      const google = createGoogleGenerativeAI({ apiKey: process.env.GOOGLE_API_KEY! });
+      const google = createGoogleGenerativeAI({
+        apiKey: process.env.GOOGLE_API_KEY!,
+      });
       const model = google(modelName as any);
       return wrapWithLangfuse(model, `google/${modelName}`);
     }
@@ -81,7 +89,6 @@ export function getModel(modelSpecifier?: string): LanguageModelV2 {
 export function getDefaultModel(): LanguageModelV2 {
   return getModel(`openai:${process.env.OPENAI_MODEL || 'gpt-5'}`);
 }
-
 
 const MinChunkSize = 140;
 const encoder = getEncoding('o200k_base');
