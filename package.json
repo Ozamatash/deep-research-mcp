@@ -14,7 +14,10 @@
     "serve": "node --env-file=.env.local dist/mcp-server.js",
     "serve:http": "node --env-file=.env.local dist/http-server.js",
     "docker": "tsx src/run.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "test:integration": "node test-research-integration.js"
   },
   "author": "",
   "license": "ISC",
@@ -23,10 +26,11 @@
     "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
     "@types/express": "^5.0.2",
     "@types/lodash-es": "^4.17.12",
-    "@types/node": "^22.13.0",
+    "@types/node": "^22.18.3",
     "prettier": "^3.4.2",
     "tsx": "^4.19.2",
-    "typescript": "^5.7.3"
+    "typescript": "^5.7.3",
+    "vitest": "^3.2.4"
   },
   "dependencies": {
     "@ai-sdk/anthropic": "^2.0.1",

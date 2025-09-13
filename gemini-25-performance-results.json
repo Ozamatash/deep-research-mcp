@@ -1,0 +1,64 @@
+{
+  "timestamp": "2025-09-13T16:25:53.449Z",
+  "testType": "Gemini 2.5 Family Performance Comparison",
+  "langfuseEnabled": true,
+  "results": [
+    {
+      "model": "Gemini 2.5 Flash",
+      "success": true,
+      "timing": {
+        "researchTime": 8767,
+        "reportTime": 15375,
+        "totalTime": 24142,
+        "expectedTime": 30000,
+        "performanceRatio": 0.8047333333333333
+      },
+      "research": {
+        "learningsCount": 0,
+        "sourcesCount": 0,
+        "averageReliability": 0
+      },
+      "report": {
+        "length": 7022,
+        "hasStructure": true,
+        "sourcesInReport": 0,
+        "hasReliabilityScores": false
+      },
+      "progressUpdates": 1
+    },
+    {
+      "model": "Gemini 2.5 Pro",
+      "success": true,
+      "timing": {
+        "researchTime": 29927,
+        "reportTime": 56082,
+        "totalTime": 86009,
+        "expectedTime": 60000,
+        "performanceRatio": 1.4334833333333334
+      },
+      "research": {
+        "learningsCount": 0,
+        "sourcesCount": 0,
+        "averageReliability": 0
+      },
+      "report": {
+        "length": 15448,
+        "hasStructure": true,
+        "sourcesInReport": 0,
+        "hasReliabilityScores": false
+      },
+      "progressUpdates": 1
+    },
+    {
+      "model": "Gemini 2.5 Flash-Lite",
+      "success": false,
+      "error": "No object generated: could not parse the response.",
+      "totalTime": 24909
+    }
+  ],
+  "summary": {
+    "totalTests": 3,
+    "successful": 2,
+    "failed": 1
+  }
+}

@@ -18,6 +18,9 @@ const log = (...args: any[]) => {
 // Log environment check
 log('Environment check:', {
   hasOpenAiKey: !!Config.openai.apiKey,
+  hasGoogleKey: !!Config.google.apiKey,
+  hasAnthropicKey: !!Config.anthropic.apiKey,
+  hasXaiKey: !!Config.xai.apiKey,
   hasFirecrawlKey: !!Config.firecrawl.apiKey,
   firecrawlBaseUrl: Config.firecrawl.baseUrl || '(using API)',
   firecrawlConcurrency: Config.firecrawl.concurrency,
@@ -28,6 +31,48 @@ const server = new McpServer({
   version: '1.0.0',
 }, { capabilities: { logging: {} } });
 
+// List available models tool
+server.tool(
+  'list-models',
+  'List all available AI models with their capabilities and intelligence ratings',
+  {},
+  async () => {
+    try {
+      const { getAvailableProviders } = await import('./ai/providers.js');
+      const providers = getAvailableProviders();
+      
+      if (providers.length === 0) {
+        return {
+          content: [{
+            type: 'text',
+            text: 'No models available. Please set at least one API key: OPENAI_API_KEY, GOOGLE_API_KEY, ANTHROPIC_API_KEY, or XAI_API_KEY'
+          }]
+        };
+      }
+      
+      const modelList = providers.map(p => 
+        `${p.provider}:${p.model} (Intelligence: ${p.intelligence}/100)`
+      ).join('\n');
+      
+      return {
+        content: [{
+          type: 'text', 
+          text: `Available Models:\n${modelList}\n\nUsage: Use format "provider:model" (e.g., "google:gemini-2.5-pro") or leave empty for best available model.`
+        }],
+        metadata: { providers }
+      };
+    } catch (error) {
+      return {
+        content: [{
+          type: 'text',
+          text: `Error listing models: ${error instanceof Error ? error.message : String(error)}`
+        }],
+        isError: true
+      };
+    }
+  }
+);
+
 // Define the deep research tool
 server.tool(
   'deep-research',
@@ -36,7 +81,7 @@ server.tool(
     query: z.string().min(1).describe("The research query to investigate"),
     depth: z.number().min(1).max(5).describe("How deep to go in the research tree (1-5)"),
     breadth: z.number().min(1).max(5).describe("How broad to make each research level (1-5)"),
-    model: z.string().optional().describe('Model specifier, e.g. "openai:gpt-5"'),
+    model: z.string().optional().describe('Model specifier (use list-models tool to see options). Format: "provider:model" (e.g. "google:gemini-2.5-pro", "openai:o1", "anthropic:claude-3-5-sonnet-20241022"). Leave empty for best available model.'),
     tokenBudget: z.number().optional().describe('Optional soft cap for total research-phase tokens; final report not counted'),
     sourcePreferences: z.string().optional().describe('Natural-language preferences for sources to avoid (e.g., "avoid SEO top 10 listicles, forums, affiliate reviews")'),
   },
@@ -45,6 +90,7 @@ server.tool(
       let currentProgress = '';
 
       const model = getModel(modelSpec);
+      log(`Using model: ${modelSpec || 'auto (best available)'}`);
       const result = await deepResearch({
         query,
         depth,

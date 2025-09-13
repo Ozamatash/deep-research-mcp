@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-09-13T17:02:22.108Z",
+  "testType": "Local Firecrawl Integration Test",
+  "model": "google:gemini-2.5-flash",
+  "firecrawlInstance": "Local (http://localhost:3002)",
+  "searxngBackend": true,
+  "langfuseEnabled": true,
+  "analysis": {
+    "success": true,
+    "timing": {
+      "researchTime": 37660,
+      "reportTime": 17309,
+      "totalTime": 54969
+    },
+    "research": {
+      "learningsCount": 0,
+      "sourcesCount": 5,
+      "sourceMetadataCount": 3,
+      "averageReliability": 0
+    },
+    "report": {
+      "length": 10930,
+      "hasStructure": true,
+      "sourcesInReport": 3,
+      "hasReliabilityScores": true
+    },
+    "progressUpdates": 2,
+    "localFirecrawl": true
+  },
+  "sampleLearnings": [],
+  "sampleSources": [
+    "https://www.sciencedirect.com/science/article/pii/S2211467X2200133X",
+    "https://www.un.org/en/climatechange/raising-ambition/renewable-energy",
+    "https://www.ucs.org/resources/benefits-renewable-energy-use",
+    "https://www.sciencedirect.com/science/article/abs/pii/S2213138823000917",
+    "https://www.intechopen.com/chapters/70874"
+  ],
+  "reportPreview": "# The Multifaceted Benefits of Renewable Energy: A Comprehensive Analysis\n\n## Executive Summary\n\nRenewable energy sources represent a cornerstone of sustainable global development, offering an extensive array of environmental, economic, social, and geopolitical advantages over traditional fossil fuels. As of late 2025, the imperative to transition away from carbon-intensive energy systems has never been more urgent, driven by climate change, energy security concerns, and the pursuit of economic "
+}

@@ -52,4 +52,4 @@ export const Config = {
 } as const;
 
 // Export individual configs for convenience
-export const { openai, firecrawl, langfuse } = Config;
+export const { openai, google, anthropic, xai, firecrawl, langfuse } = Config;

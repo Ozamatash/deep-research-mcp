@@ -1,0 +1,17 @@
+{
+  "timestamp": "2025-09-13T14:42:58.252Z",
+  "summary": {
+    "totalTests": 3,
+    "passed": 0,
+    "failed": 4,
+    "successRate": "0.0"
+  },
+  "langfuseEnabled": true,
+  "results": [],
+  "analysis": {
+    "averagePerformanceRatio": 0,
+    "testsWithinExpectedTime": 0,
+    "averageSourcesPerTest": 0,
+    "averageReportLength": 0
+  }
+}
