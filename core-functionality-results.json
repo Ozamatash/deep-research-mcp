@@ -1,0 +1,35 @@
+{
+  "timestamp": "2025-09-13T16:05:07.301Z",
+  "testType": "Core Functionality Test",
+  "langfuseEnabled": true,
+  "query": "Benefits of renewable energy",
+  "model": "google:gemini-2.0-flash-exp",
+  "config": {
+    "depth": 1,
+    "breadth": 2
+  },
+  "analysis": {
+    "success": true,
+    "timing": {
+      "researchTime": 4810,
+      "reportTime": 24382,
+      "totalTime": 29193
+    },
+    "research": {
+      "learningsCount": 0,
+      "sourcesCount": 0,
+      "sourceMetadataCount": 0,
+      "averageReliability": 0
+    },
+    "report": {
+      "length": 17793,
+      "hasStructure": true,
+      "sourcesInReport": 0,
+      "hasReliabilityScores": false
+    },
+    "progressUpdates": 1
+  },
+  "sampleLearnings": [],
+  "sampleSources": [],
+  "reportPreview": "# Final Report: Benefits of Renewable Energy\n\nThis report details the comprehensive benefits of renewable energy sources, drawing upon a synthesis of current research and considering potential future impacts. Given the absence of specific 'learnings' provided in the prompt, this report will operate as a foundational analysis, covering key advantages, potential challenges, and forward-looking considerations. Since no data has been provided, some of the content below will be based on projections a"
+}

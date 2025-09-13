@@ -433,6 +433,7 @@ export async function writeFinalReport({
   sourceMetadata: SourceMetadata[];
   model: LanguageModelV2;
 }) {
+  const reportStart = Date.now();
   // Quick reliability analysis
   const reliabilityGroups = {
     high: sourceMetadata.filter(m => m.reliabilityScore >= 0.8),
@@ -480,6 +481,8 @@ Here are all the learnings from previous research:
     })
     .join('\n\n');
 
+  const reportEnd = Date.now();
+  log(`[TIMING] Final report generation took ${reportEnd - reportStart}ms`);
   return res.object.reportMarkdown + sourcesSection;
 }
 
@@ -519,6 +522,7 @@ export async function deepResearch({
   weightedLearnings: LearningWithReliability[];
   budget?: { usedTokens: number; tokenBudget?: number; reached: boolean };
 }> {
+  const researchStart = Date.now();
   const model = providedModel ?? getDefaultModel();
   // initialize/reuse token budget for this research session
   const budget: BudgetState | undefined =
@@ -571,19 +575,23 @@ export async function deepResearch({
           };
         }
         try {
+          const searchStart = Date.now();
           const result = await firecrawl.search(serpQuery.query, {
             timeout: 15000,
             limit: serpQuery.isVerificationQuery ? 8 : 5,
-            scrapeOptions: { 
+            scrapeOptions: {
               formats: ['markdown']
             },
           });
+          const searchEnd = Date.now();
+          log(`[TIMING] Firecrawl search for "${serpQuery.query}" took ${searchEnd - searchStart}ms`);
 
           // Collect URLs from this search
           const newUrls = compact(result.data.map(item => item.url));
           const newBreadth = Math.ceil(breadth / 2);
           const newDepth = depth - 1;
 
+          const processStart = Date.now();
           const processedResult = await processSerpResult({
             query: serpQuery.query,
             result,
@@ -594,6 +602,8 @@ export async function deepResearch({
             model,
             budget,
           });
+          const processEnd = Date.now();
+          log(`[TIMING] Processing SERP for "${serpQuery.query}" took ${processEnd - processStart}ms`);
           
           const allLearnings = [...learnings, ...processedResult.learnings];
           const allUrls = [...visitedUrls, ...newUrls];
@@ -699,5 +709,7 @@ Follow-up research directions: ${processedResult.followUpQuestions.map(q => `\n$
     budget: budget
   };
 
+  const researchEnd = Date.now();
+  log(`[TIMING] Overall deepResearch took ${researchEnd - researchStart}ms`);
   return combinedResults;
 }
