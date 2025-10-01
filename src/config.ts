@@ -12,6 +12,7 @@ config({ path: resolve(__dirname, '../.env.local') });
 // Define and validate the environment schema
 const envSchema = z.object({
   OPENAI_API_KEY: z.string().optional(),
+  OPENAI_ENDPOINT: z.string().url().optional(),
   ANTHROPIC_API_KEY: z.string().optional(),
   GOOGLE_API_KEY: z.string().optional(),
   XAI_API_KEY: z.string().optional(),
@@ -29,6 +30,7 @@ const env = envSchema.parse(process.env);
 export const Config = {
   openai: {
     apiKey: env.OPENAI_API_KEY,
+    endpoint: env.OPENAI_ENDPOINT,
   },
   anthropic: {
     apiKey: env.ANTHROPIC_API_KEY,
