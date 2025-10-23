@@ -43,3 +43,6 @@ bun.lockb
 
 # Tasks
 /tasks
+
+# Benchmarks
+/benchmarks

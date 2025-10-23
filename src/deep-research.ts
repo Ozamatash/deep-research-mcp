@@ -60,6 +60,9 @@ const firecrawl = new FirecrawlApp({
   apiUrl: firecrawlConfig.baseUrl,
 });
 
+// Shared concurrency limiter for all research sessions
+const concurrencyLimiter = pLimit(ConcurrencyLimit);
+
 type LearningWithReliability = {
   content: string;
   reliability: number;
@@ -491,7 +494,7 @@ export async function deepResearch({
   learningReliabilities = [],
   visitedUrls = [],
   weightedLearnings = [],
-  researchDirections = [],  // Add structured research directions
+  researchDirections = [],
   onProgress,
   model: providedModel,
   tokenBudget,
@@ -505,12 +508,12 @@ export async function deepResearch({
   learningReliabilities?: number[];
   visitedUrls?: string[];
   weightedLearnings?: LearningWithReliability[];
-  researchDirections?: ResearchDirection[];  // New parameter
+  researchDirections?: ResearchDirection[];
   onProgress?: (progress: ResearchProgress) => void;
   model?: LanguageModelV2;
-  tokenBudget?: number; // Optional soft cap for research-phase tokens
-  budgetState?: BudgetState; // internal shared state for recursion
-  sourcePreferences?: string; // natural-language preferences to avoid certain sources
+  tokenBudget?: number;
+  budgetState?: BudgetState;
+  sourcePreferences?: string;
 }): Promise<{
   learnings: string[];
   learningReliabilities: number[];
@@ -556,11 +559,10 @@ export async function deepResearch({
     currentQuery: serpQueries[0]?.query,
   });
 
-  const limit = pLimit(ConcurrencyLimit);
 
   const results = await Promise.all(
     serpQueries.map(serpQuery =>
-      limit(async () => {
+      concurrencyLimiter(async () => {
         if (budget?.reached) {
           return {
             learnings: [],
@@ -572,7 +574,7 @@ export async function deepResearch({
         }
         try {
           const result = await firecrawl.search(serpQuery.query, {
-            timeout: 15000,
+            timeout: 45000,
             limit: serpQuery.isVerificationQuery ? 8 : 5,
             scrapeOptions: { 
               formats: ['markdown']
