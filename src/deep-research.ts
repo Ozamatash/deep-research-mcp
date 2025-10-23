@@ -12,6 +12,7 @@ import type { LanguageModelV2 } from '@ai-sdk/provider';
 import { firecrawl as firecrawlConfig } from './config.js';
 import { OutputManager } from './output-manager.js';
 import { systemPrompt } from './prompt.js';
+import { filterSearchResults, scrapeUrls } from './scraper.js';
 
 // Get the directory name of the current module
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
@@ -280,7 +281,7 @@ async function processSerpResult({
   budget,
 }: {
   query: string;
-  result: SearchResponse;
+  result: { data: Array<{ url?: string | null; title?: string | null; markdown?: string | null }> };
   numLearnings?: number;
   numFollowUpQuestions?: number;
   reliabilityThreshold?: number;
@@ -573,16 +574,38 @@ export async function deepResearch({
           };
         }
         try {
-          const result = await firecrawl.search(serpQuery.query, {
+          // Step 1: Search only (no scraping yet)
+          const searchResults = await firecrawl.search(serpQuery.query, {
             timeout: 45000,
             limit: serpQuery.isVerificationQuery ? 8 : 5,
-            scrapeOptions: { 
-              formats: ['markdown']
-            },
+            // No scrapeOptions - just get URLs, titles, descriptions
           });
 
-          // Collect URLs from this search
-          const newUrls = compact(result.data.map(item => item.url));
+          // Step 2: Filter search results before scraping
+          const urlsToScrape = await filterSearchResults({
+            searchResults: (searchResults.data || []).map((item: any) => ({
+              url: item.url || '',
+              title: item.title || item.metadata?.title,
+              description: item.description || item.metadata?.description,
+              position: item.position,
+            })),
+            query: serpQuery.query,
+            sourcePreferences,
+            model,
+            budget,
+            limiter: concurrencyLimiter,
+          });
+
+          // Step 3: Scrape only filtered URLs
+          const scrapedResults = await scrapeUrls(firecrawl, urlsToScrape);
+
+          // Step 4: Build result object compatible with existing code
+          const result = {
+            data: scrapedResults,
+          };
+
+          // Collect URLs from scraped results
+          const newUrls = compact(scrapedResults.map(item => item.url));
           const newBreadth = Math.ceil(breadth / 2);
           const newDepth = depth - 1;
 

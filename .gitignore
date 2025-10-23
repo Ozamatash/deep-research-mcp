@@ -41,8 +41,5 @@ yarn-error.log*
 *.pem
 bun.lockb
 
-# Tasks
-/tasks
-
 # Benchmarks
 /benchmarks
